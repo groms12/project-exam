@@ -1,0 +1,32 @@
+{
+  "name": "project-exam",
+  "version": "1.0.0",
+  "description": "сайт с клубами",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groms12/project-exam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/groms12/project-exam/issues"
+  },
+  "homepage": "https://github.com/groms12/project-exam#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-js-minify": "0.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
