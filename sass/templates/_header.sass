@@ -1,12 +1,14 @@
 html 
     font-size: 14px
 .header
-    background:  url('../img/background/mountain.jpg') center no-repeat
+    background:  url('../img/background/mountain.jpg') no-repeat center 
+    background-size: cover
     &__menu
         list-style-type: none
         display: flex
         flex-direction: row
         justify-content: space-around
+        align-items: center
         background-color: $bg
         text-transform: uppercase
         padding-top: 1.928rem 
@@ -22,12 +24,30 @@ html
         justify-content: space-around
         &__img
             margin-top: 2.14rem 
-            margin-bottom: 1.57rem
+            margin-bottom: 1rem
             margin-right: 10.928rem
         &__list
             display: flex
             justify-content: space-around
             align-items: center
+            margin-top: 1rem
+            &__btn
+                text-transform: uppercase
+                color: $yellow
+                position: relative
+                border: 1px solid $yellow
+                border-radius: 30px
+                padding: 1.285rem 2.428rem 1.285rem 4.07rem 
+                &::before
+                    content: ''
+                    width: 0.714rem
+                    height: 0.714rem
+                    border-bottom: 2px solid $yellow
+                    border-right: 2px solid $yellow
+                    transform: rotate(45deg)
+                    position: absolute
+                    left: 2rem
+                    top: 1.1rem
             &__logo
                 margin-left: 5.785rem
                 margin-right: 1rem
@@ -55,7 +75,11 @@ html
                 border-color: $yellow
                 outline: none
                 border-radius: 30px
-            
+    &__main
+        display: flex
+        justify-content: space-between
+        &__people
+            margin-top: -1rem
 		
 
 

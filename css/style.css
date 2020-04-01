@@ -392,12 +392,14 @@ html {
   font-size: 14px; }
 
 .header {
-  background: url("../img/background/mountain.jpg") center no-repeat; }
+  background: url("../img/background/mountain.jpg") no-repeat center;
+  background-size: cover; }
   .header__menu {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: #220a16;
     text-transform: uppercase;
     padding-top: 1.928rem;
@@ -413,12 +415,30 @@ html {
     justify-content: space-around; }
     .header__cap__img {
       margin-top: 2.14rem;
-      margin-bottom: 1.57rem;
+      margin-bottom: 1rem;
       margin-right: 10.928rem; }
     .header__cap__list {
       display: flex;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      margin-top: 1rem; }
+      .header__cap__list__btn {
+        text-transform: uppercase;
+        color: #ffd11a;
+        position: relative;
+        border: 1px solid #ffd11a;
+        border-radius: 30px;
+        padding: 1.285rem 2.428rem 1.285rem 4.07rem; }
+        .header__cap__list__btn::before {
+          content: '';
+          width: 0.714rem;
+          height: 0.714rem;
+          border-bottom: 2px solid #ffd11a;
+          border-right: 2px solid #ffd11a;
+          transform: rotate(45deg);
+          position: absolute;
+          left: 2rem;
+          top: 1.1rem; }
       .header__cap__list__logo {
         margin-left: 5.785rem;
         margin-right: 1rem; }
@@ -446,3 +466,8 @@ html {
         border-color: #ffd11a;
         outline: none;
         border-radius: 30px; }
+  .header__main {
+    display: flex;
+    justify-content: space-between; }
+    .header__main__people {
+      margin-top: -1rem; }
