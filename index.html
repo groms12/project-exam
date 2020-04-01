@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
+
             <div class="header__cap">
                 <img class="header__cap__img" src="img/header-logo/logo.png" alt="ЛЕТО">
                 <div class="header__cap__list">
@@ -21,6 +23,7 @@
                     <button class="header__cap__list__call">перезвоните мне</button>
                 </div>
             </div>
+
             <ul class="header__menu">
                 <li><a class="header__menu__list" href="#">клубы</a></li>                
                 <li><img src="img/border.png" alt=""></li>
@@ -38,28 +41,60 @@
                 <li><img src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">контакты</a></li>
             </ul>
-            <div class="header__main">
-                <div class="header__main__text">
-                    <div class="header__main__text__info">
-                        <span class="header__main__text__info__up">2 круглосуточные</span> 
-                        <span class="header__main__text__info__middle header__main__text__info__middle--yellow">клубные&nbsp;карты</span> 
-                        <span class="header__main__text__info__down">за 22 000 <img src="img/header-logo/rub.png" alt=""></span>
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide header__main">
+                        <div class="header__main__text">
+                            <div class="header__main__text__info">
+                                <span class="header__main__text__info__up">2 круглосуточные</span> 
+                                <span class="header__main__text__info__middle header__main__text__info__middle--yellow">клубные&nbsp;карты</span> 
+                                <span class="header__main__text__info__down">за 22 000 <img src="img/header-logo/rub.png" alt=""></span>
+                            </div>
+                            <div class="header__main__text__call">Только до 31 августа! <br>
+                                Закажите карту по телефону: <br>
+                               <span  class="header__main__text__call__tel">+7 (495) 266-02-48</br>
+                            </div>
+                        </div>
+                        <img class="header__main__people" src="img/background/people.png" alt="спортсмены">                        
                     </div>
-                    <div class="header__main__text__call">Только до 31 августа! <br>
-                        Закажите карту по телефону: <br>
-                       <span  class="header__main__text__call__tel">+7 (495) 266-02-48</br>
-                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
                 </div>
-                <img class="header__main__people" src="img/background/people.png" alt="спортсмены">
+                <!-- If we need pagination -->               
+                <div class="swiper-pagination">
+                    <img src="img/bullet.png" alt="">
+                    <img src="img/bullet.png" alt="">
+                    <img src="img/bullet.png" alt="">
+                    <img src="img/bullet.png" alt="">
+                    <img src="img/bullet.png" alt="">
+                </div>
             </div>
-            <img src="img/slider.png" alt="" class="header__slider">
         </div>
     </header>
 
     <main>
-        <div class="container">
-
-        </div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Выберите свой клуб</h2>
+                <div class="section__clubs">
+                    <div class="section__clubs__mozaica">
+                        <img src="img/main-section/clubs/club_mosaica.jpg" alt="клуб мозаика" class="section__clubs__img">
+                        <div class="section__clubs__text">«Лето» в ТРЦ «Мозаика» <br>
+                            Россия, Москва, 7-я Кожуховская ул., 9</div>
+                    </div>
+                    <div class="section__clubs__shelkovo">
+                        <img src="img/main-section/clubs/club_shelkovo.jpg" alt="клуб Щелково" class="section__clubs__img">
+                        <div class="section__clubs__text">«Лето» в БЦ Спиртзавод <br>
+                            Россия, г. Щелково, ул. Советская, д. 16</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -68,5 +103,11 @@
         </div>
     </footer>
         
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery3.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script> 
+    <script src="js/main.js"></script>
 </body>
 </html>
