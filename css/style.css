@@ -528,3 +528,69 @@ html {
 
 .swiper-container {
   margin-top: -1rem; }
+
+.swiper-pagination {
+  margin-bottom: 4rem; }
+
+.section__title {
+  margin-top: 4.14rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.642rem;
+  text-transform: uppercase;
+  font-family: 'Roboto-Regular';
+  text-align: center; }
+  .section__title::after {
+    content: '';
+    display: block;
+    width: 6.214rem;
+    height: 2px;
+    background-color: #ffd11a;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2.2rem; }
+
+.section__clubs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem; }
+  .section__clubs__text {
+    margin-top: 2.428rem;
+    text-align: center;
+    font-family: 'Roboto-Medium';
+    font-size: 1.285rem;
+    font-weight: 500;
+    margin-bottom: 2.428rem; }
+    .section__clubs__text__adress {
+      font-family: 'Roboto-Light';
+      font-weight: 300; }
+  .section__clubs__mozaica {
+    margin-right: 1rem;
+    position: relative;
+    border: 1px solid rgba(39, 25, 48, 0.14); }
+    .section__clubs__mozaica::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 22.785rem;
+      background-color: rgba(39, 25, 48, 0.7); }
+  .section__clubs__shelkovo {
+    margin-left: 1rem;
+    position: relative;
+    border: 1px solid rgba(39, 25, 48, 0.14); }
+    .section__clubs__shelkovo::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 22.785rem;
+      background-color: rgba(39, 25, 48, 0.7); }
+
+.place-icon-before {
+  position: absolute;
+  bottom: 2.7rem;
+  left: 1.78rem; }
+
+.place-icon-after {
+  position: absolute;
+  bottom: 2.7rem;
+  right: 1.78rem; }
