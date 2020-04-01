@@ -388,6 +388,35 @@ template {
   font-style: normal;
   font-display: swap; }
 
+.scroll-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3.57rem;
+  right: 1rem;
+  width: 3.57rem;
+  height: 3.57rem;
+  border-radius: 50%;
+  border: 2px solid #ffd11a;
+  background-color: transperent;
+  z-index: 1000;
+  outline: none;
+  display: none; }
+  .scroll-top:hover {
+    background-color: rgba(255, 209, 26, 0.2); }
+  .scroll-top::after {
+    content: '';
+    width: 0.714rem;
+    height: 0.714rem;
+    border-top: 2px solid #ffd11a;
+    border-left: 2px solid #ffd11a;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.286rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
 html {
   font-size: 14px; }
 
@@ -659,3 +688,69 @@ html {
         font-weight: 400;
         line-height: 1.574rem;
         text-transform: uppercase; }
+
+.swiper-container-s2 {
+  position: relative;
+  margin-top: 2.214rem;
+  margin-left: 15rem;
+  margin-right: 15rem; }
+
+.swiper-button-prev-btn {
+  z-index: 3;
+  position: absolute;
+  top: 4rem;
+  left: -1rem;
+  width: 2.57rem;
+  height: 2.57rem;
+  background-color: #ffd11a;
+  border-radius: 50%;
+  outline: none; }
+  .swiper-button-prev-btn::after {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.286rem;
+    bottom: 0;
+    left: 0.1rem;
+    right: 0;
+    margin: auto; }
+
+.swiper-button-next-btn {
+  z-index: 3;
+  position: absolute;
+  top: 4rem;
+  right: -0.5rem;
+  width: 2.57rem;
+  height: 2.57rem;
+  background-color: #ffd11a;
+  border-radius: 50%;
+  outline: none; }
+  .swiper-button-next-btn::after {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.286rem;
+    bottom: 0;
+    right: 0.1rem;
+    left: 0;
+    margin: auto; }
+
+.swiper-slide__text {
+  text-align: center;
+  margin-left: 1rem;
+  color: #2e2e2e;
+  font-family: 'Roboto-Bold';
+  font-size: 1.14rem;
+  font-weight: 700;
+  max-width: 12.857rem; }
+  .swiper-slide__text__info {
+    font-family: 'Roboto-Light';
+    font-weight: 300; }

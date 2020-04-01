@@ -1,0 +1,68 @@
+.swiper
+    &-container
+        &-s2 
+            position: relative
+            margin-top: 2.214rem
+            margin-left: 15rem
+            margin-right: 15rem
+    &-button
+        &-prev
+            &-btn
+                z-index: 3
+                position: absolute
+                top: 4rem
+                left: -1rem
+                width: 2.57rem
+                height: 2.57rem 
+                background-color: $yellow
+                border-radius: 50%
+                outline: none
+                &::after
+                    content: ''
+                    width: 0.6rem
+                    height: 0.6rem                
+                    border-left: 1px solid $black 
+                    border-bottom: 1px solid $black
+                    transform: rotate(45deg)
+                    position: absolute
+                    top: 0.286rem
+                    bottom: 0
+                    left: 0.1rem
+                    right: 0
+                    margin: auto
+        &-next
+            &-btn
+                z-index: 3
+                position: absolute
+                top: 4rem
+                right: -0.5rem
+                width: 2.57rem
+                height: 2.57rem 
+                background-color: $yellow
+                border-radius: 50%
+                outline: none
+                &::after
+                    content: ''
+                    width: 0.6rem
+                    height: 0.6rem                
+                    border-right: 1px solid $black 
+                    border-top: 1px solid $black
+                    transform: rotate(45deg)
+                    position: absolute
+                    top: 0.286rem
+                    bottom: 0
+                    right: 0.1rem
+                    left: 0
+                    margin: auto
+    &-slide
+        &__text
+            text-align: center
+            margin-left: 1rem
+            color: #2e2e2e
+            font-family: 'Roboto-Bold'
+            font-size: 1.14rem
+            font-weight: 700
+            max-width: 12.857rem
+            &__info
+                font-family: 'Roboto-Light'
+                font-weight: 300

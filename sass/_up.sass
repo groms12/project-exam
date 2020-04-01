@@ -1,0 +1,28 @@
+.scroll-top
+	cursor: pointer
+	position: fixed
+	bottom: 3.57rem
+	right: 1rem
+	width: 3.57rem
+	height: 3.57rem
+	border-radius: 50%
+	border: 2px solid $yellow
+	background-color: transperent
+	z-index: 1000
+	outline: none
+	display: none
+	&:hover
+        background-color: rgba($yellow, 0.2) 
+	&::after
+		content: ''
+		width: 0.714rem
+		height: 0.714rem
+		border-top: 2px solid $yellow
+		border-left: 2px solid $yellow
+		transform: rotate(45deg)
+		position: absolute
+		top: 0.286rem
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
