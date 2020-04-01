@@ -568,6 +568,22 @@ html {
     margin-right: 1rem;
     position: relative;
     border: 1px solid rgba(39, 25, 48, 0.14); }
+    .section__clubs__mozaica__img__border {
+      z-index: 2;
+      position: absolute;
+      top: 8.14rem;
+      left: 12.214rem; }
+    .section__clubs__mozaica__img__text {
+      z-index: 2;
+      color: #ffffff;
+      font-family: 'Roboto-Light';
+      font-size: 2.57rem;
+      font-weight: 300;
+      line-height: 1.428rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 8.2rem;
+      left: 10.14rem; }
     .section__clubs__mozaica::before {
       content: '';
       position: absolute;
