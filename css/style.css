@@ -562,6 +562,9 @@ html {
 .swiper-pagination {
   margin-bottom: 4rem; }
 
+.swiper__pagination__img__galery {
+  margin-bottom: -2rem; }
+
 .section__title {
   margin-top: 4.14rem;
   font-size: 2rem;
@@ -580,7 +583,7 @@ html {
     background-color: #ffd11a;
     margin: auto;
     margin-top: 1.5rem;
-    margin-bottom: 2.2rem; }
+    margin-bottom: 2.214rem; }
 
 .section__clubs {
   display: flex;
@@ -690,10 +693,8 @@ html {
         text-transform: uppercase; }
 
 .swiper-container-s2 {
-  position: relative;
   margin-top: 2.214rem;
-  margin-left: 15rem;
-  margin-right: 15rem; }
+  max-width: 80.285rem; }
 
 .swiper-button-prev-btn {
   z-index: 3;
@@ -713,11 +714,14 @@ html {
     border-bottom: 1px solid black;
     transform: rotate(45deg);
     position: absolute;
-    top: 0.286rem;
+    top: 0rem;
     bottom: 0;
-    left: 0.1rem;
+    left: 0.2rem;
     right: 0;
     margin: auto; }
+  .swiper-button-prev-btn__galery {
+    top: 12.8rem;
+    left: 24rem; }
 
 .swiper-button-next-btn {
   z-index: 3;
@@ -737,11 +741,14 @@ html {
     border-top: 1px solid black;
     transform: rotate(45deg);
     position: absolute;
-    top: 0.286rem;
+    top: 0;
     bottom: 0;
-    right: 0.1rem;
+    right: 0.2rem;
     left: 0;
     margin: auto; }
+  .swiper-button-next-btn__galery {
+    top: 12.8rem;
+    right: 24rem; }
 
 .swiper-slide__text {
   text-align: center;
@@ -754,3 +761,8 @@ html {
   .swiper-slide__text__info {
     font-family: 'Roboto-Light';
     font-weight: 300; }
+
+.swiper-container-s3 {
+  background: url("../img/background/background-photoes.jpg") no-repeat center;
+  margin-top: 2.214rem;
+  padding-left: 28rem; }

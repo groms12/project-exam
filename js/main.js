@@ -2,6 +2,7 @@ $(document).ready(function () {
     var mySwiper = new Swiper ('.swiper-container-s1', {
         loop: true,
         preloadImages: false,
+        initialSlide: 1,
         lazy: true,
         pagination: {
             el: '.swiper-pagination',
@@ -15,7 +16,23 @@ $(document).ready(function () {
         loop: true,
         preloadImages: false,
         slidesPerView: 5,
-        spaceBetween: 4,
+        spaceBetween: 12,
+          navigation: {
+            nextEl: '.swiper-button-next-btn',
+            prevEl: '.swiper-button-prev-btn',
+          },
+    });
+
+    var mySwiper = new Swiper ('.swiper-container-s3', {
+        loop: true,
+        preloadImages: false,initialSlide: 1,
+        lazy: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            type: 'custom',
+            bulletClass:'swiper__pagination__img',
+          },
           navigation: {
             nextEl: '.swiper-button-next-btn',
             prevEl: '.swiper-button-prev-btn',

@@ -1,10 +1,8 @@
 .swiper
     &-container
         &-s2 
-            position: relative
             margin-top: 2.214rem
-            margin-left: 15rem
-            margin-right: 15rem
+            max-width: 80.285rem
     &-button
         &-prev
             &-btn
@@ -25,11 +23,14 @@
                     border-bottom: 1px solid $black
                     transform: rotate(45deg)
                     position: absolute
-                    top: 0.286rem
+                    top: 0rem
                     bottom: 0
-                    left: 0.1rem
+                    left: 0.2rem
                     right: 0
                     margin: auto
+                &__galery
+                    top: 12.8rem
+                    left: 24rem
         &-next
             &-btn
                 z-index: 3
@@ -49,11 +50,14 @@
                     border-top: 1px solid $black
                     transform: rotate(45deg)
                     position: absolute
-                    top: 0.286rem
+                    top: 0
                     bottom: 0
-                    right: 0.1rem
+                    right: 0.2rem
                     left: 0
-                    margin: auto
+                    margin: auto                
+                &__galery
+                    top: 12.8rem
+                    right: 24rem
     &-slide
         &__text
             text-align: center
