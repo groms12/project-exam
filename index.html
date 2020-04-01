@@ -188,6 +188,41 @@
                 </div>           
             </div>
         </section>
+
+        <section class="section__cards">
+            <div class="container">
+                <h2 class="section__title">Клубные карты</h2>
+                <div class="section__cards__info">
+                    <div class="section__cards__card">
+                        <img src="img/card-before.jpg" alt="" class="section__cards__card__before">
+                        <img src="img/card.jpg" alt="" class="section__cards__card__middle">
+                        <img src="img/card-before.jpg" alt="" class="section__cards__card__after">
+                    </div>
+                    <form action="send.php" method="POST" class="section__cards__text">
+                        <div>
+                            <input type="radio" name="radio"><label for="radio" class="section__cards__text__radio">1 месяц</label> 
+                            <input type="radio" name="radio1"><label for="radio1" class="section__cards__text__radio">6 месяцев</label> 
+                            <input type="radio" name="radio2"><label for="radio2" class="section__cards__text__radio">9 месяцев</label> 
+                            <input type="radio" name="radio3"><label for="radio3" class="section__cards__text__radio">12 месяцев</label> 
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" checked> <span class="section__cards__text__check">Лето «Мозаика» <br>
+                                <span class="section__cards__text__check__adress">Россия, Москва, 7-я Кожуховская ул., 9</span> </span> 
+                        </div>
+                        <div class="check">
+                            <input type="checkbox"> <span class="section__cards__text__check">Лето «Щелково» <br>
+                                <span class="section__cards__text__check__adress">Россия, г. Щелково, ул. Советская, д. 16</span></span>
+                        </div>
+                        <input type="text" class="section__cards__text__input" placeholder="Ваше имя*">
+                        <input type="text" class="section__cards__text__input" placeholder="Ваш номер телефона*">
+                        <div class="check">
+                            <input type="checkbox"> <span>Я согласен на обработку персональных данных</span>
+                        </div>
+                        <input type="submit" value="Забронировать карту">
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
