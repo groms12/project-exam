@@ -766,7 +766,7 @@ html {
   background: url("../img/background/background-photoes.jpg") no-repeat center;
   margin-top: 2.214rem; }
 
-.swiper-slide {
+.swiper-slide-galery {
   position: relative;
   display: flex;
   justify-content: center; }
