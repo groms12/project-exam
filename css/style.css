@@ -764,8 +764,12 @@ html {
 
 .swiper-container-s3 {
   background: url("../img/background/background-photoes.jpg") no-repeat center;
-  margin-top: 2.214rem;
-  padding-left: 28rem; }
+  margin-top: 2.214rem; }
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center; }
 
 .section__cards__info {
   margin-top: 2.214rem;
