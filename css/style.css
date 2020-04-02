@@ -388,6 +388,10 @@ template {
   font-style: normal;
   font-display: swap; }
 
+@media screen and (max-width: 1800px) {
+  .header__main__people {
+    margin-right: -5rem; } }
+
 .scroll-top {
   cursor: pointer;
   position: fixed;
@@ -541,7 +545,7 @@ html {
           color: #ffffff; }
   .header__main {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center; }
     .header__main__people {
       z-index: 3; }
