@@ -529,21 +529,16 @@ html {
         background-color: #ffd11a;
         border-color: #ffd11a;
         border-radius: 30px;
-        margin-right: 6rem;
+        margin-right: 1rem;
         margin-left: 0; }
         .header__cap__list__call:hover {
           background-color: rgba(39, 25, 48, 0.2);
           color: #ffffff; }
   .header__main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
-    .header__main__people {
-      margin-right: 0;
-      margin-left: -5rem; }
     .header__main__text {
-      margin-top: -3.2rem;
-      margin-left: 15.4rem;
       line-height: 1.285rem;
       text-transform: uppercase;
       font-weight: 300; }
@@ -592,7 +587,8 @@ html {
   margin: auto; }
 
 .menu {
-  background: url("../img/background/menu_background.jpg") no-repeat center; }
+  background: url("../img/background/menu_background.jpg") no-repeat center;
+  margin-top: -1rem; }
 
 .section__title {
   margin-top: 4.14rem;
@@ -803,7 +799,7 @@ html {
 .section__cards__info {
   margin-top: 2.214rem;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .section__cards__card {
   position: relative; }
@@ -900,17 +896,16 @@ html {
   .footer__check {
     margin-bottom: 1.714rem; }
   .footer__menu {
-    padding-left: 12rem;
-    padding-right: 5rem;
     margin-top: 4.57rem;
     padding-top: 3.785rem;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .footer__menu__call {
       display: flex;
       flex-direction: column; }
       .footer__menu__call__btn {
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        margin-left: 4rem; }
     .footer__menu__list {
       list-style-type: none;
       color: #ffffff;
@@ -929,7 +924,6 @@ html {
       display: flex;
       flex-direction: column; }
       .footer__menu__clubs__check {
-        margin-left: 0.3rem;
         color: #ffffff;
         font-size: 1rem;
         font-weight: 300;
@@ -946,22 +940,20 @@ html {
   top: 0; }
   .span-footer {
     position: absolute;
-    right: 6.1rem;
+    right: 1.4rem;
     top: 0; }
 
 .footer__href {
   padding-top: 2rem;
   padding-bottom: 2.928rem;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
   .footer__href__text {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.285rem;
-    color: #ffffff;
-    margin-left: -6rem; }
+    color: #ffffff; }
   .footer__href__icons {
-    margin-right: -8rem;
     text-decoration: none; }
     .footer__href__icons__icon {
       border: 1px solid #ffffff;

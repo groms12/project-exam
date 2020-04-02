@@ -54,7 +54,7 @@
 
             <div class="swiper-container swiper-container-s1">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="container swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">Slide 1</div>
                     <div class="swiper-slide header__main">
@@ -88,6 +88,7 @@
 
     <main>
         <section class="section">
+            <div class="container">
                 <h2 class="section__title">Выберите свой клуб</h2>
                 <div class="section__clubs">
                     <div class="section__clubs__mozaica">
@@ -113,9 +114,12 @@
                         <img src="img/mozaika/icons/place-icon.png" class="place-icon-after" alt="">
                     </div>
                 </div>
+            </div>
+                
         </section>
 
         <section class="section__free">
+            <div class="container">
                 <h2 class="section__title section__title--light section__free__title">Записаться на бесплатный визит</h2>
                 <form action="send.php" class="section__free__form" method="POST">
                     <div class="form">
@@ -127,11 +131,12 @@
                         <input type="checkbox" class="section__free__form__check"> <span class="section__free__form__check__text">Я согласен на обработку персональных данных</span> 
                     </div>
                 </form>
+            </div>
         </section>
 
         <section class="section__service">
                 <div class="section__title">услуги наших клубов</div>
-                <div class="swiper-container swiper-container-s2">
+                <div class="container swiper-container swiper-container-s2">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -167,7 +172,8 @@
         </section>
 
         <section class="section__photoes">
-                <h2 class="section__title">Фотогалерея</h2>
+                <div class="containe">
+                    <h2 class="section__title">Фотогалерея</h2>
                 <div class="swiper-container swiper-container-s3">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -188,10 +194,12 @@
                     </div>
                     <div class="swiper-button-next-btn swiper-button-next-btn__galery"></div>
                 </div>           
+                </div>
         </section>
 
         <section class="section__cards">
-                <h2 class="section__title">Клубные карты</h2>
+                <div class="container">
+                    <h2 class="section__title">Клубные карты</h2>
                 <div class="section__cards__info">
                     <div class="section__cards__card">
                         <img src="img/card-before.jpg" alt="" class="section__cards__card__before">
@@ -221,10 +229,12 @@
                         <input type="submit" class="section__cards__text__submit" value="Забронировать карту">
                     </form>
                 </div>
+                </div>
         </section>
     </main>
 
     <footer class="footer">
+        <div class="container">
             <div class="footer__menu">
                 <div class="footer__menu__logo"><img src="img/header-logo/logo.png" alt=""></div>
                 <div class="footer__menu__summer">
@@ -258,7 +268,7 @@
                     </div>
                 </div>
                 <div class="footer__menu__call">
-                    <label class="header__cap__list__phone" for="phone"> <span class="span-footer">Единый телефон</span>  <br>
+                    <label class="header__cap__list__phone footer__menu__call__phone" for="phone"> <span class="span-footer">Единый телефон</span>  <br>
                         <a class="header__cap__list__phone__tel" name="phone" href="tel:+74952660278">+7 (495) 266 02 78</a> 
                     </label>
                     <button class="header__cap__list__call footer__menu__call__btn">перезвоните мне</button>
@@ -277,6 +287,8 @@
                    <a href="https://www.twitter.com/"><img class="footer__href__icons__icon footer__href__icons__icon__twitter" src="img/footer-icon/twitter.png" alt=""></a> 
                 </div>
             </div>
+        </div>
+           
     </footer>
         
     <a href="#" class="scroll-top"></a>
