@@ -544,7 +544,8 @@ html {
     justify-content: center;
     align-items: center; }
     .header__main__people {
-      z-index: 3; }
+      z-index: 3;
+      margin-right: 4rem; }
     .header__main__text {
       line-height: 1.285rem;
       text-transform: uppercase;
