@@ -541,11 +541,10 @@ html {
           color: #ffffff; }
   .header__main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
     .header__main__people {
-      z-index: 3;
-      margin-right: 4rem; }
+      z-index: 3; }
     .header__main__text {
       line-height: 1.285rem;
       text-transform: uppercase;
