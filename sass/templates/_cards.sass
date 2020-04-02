@@ -29,7 +29,7 @@
                 height: 3.5rem
                 background-color: $yellow
                 outline: none
-                border-color: $yellow
+                border: none
                 border-radius: 30px
                 color: #1e1c34
                 font-family: 'Roboto-Bold'
@@ -42,6 +42,7 @@
                 bottom: -3rem
                 &:hover                    
                     background-color: rgba($yellow, 0.2) 
+                    border: 1px solid $yellow
             &__checkbox
                 color: #94939a
                 font-family: 'Roboto-Light'
@@ -86,3 +87,21 @@
     margin-bottom: 1.928rem
 .check
     margin-bottom: 1.57rem
+.cont 
+    position: relative
+.placeholder 
+    position: absolute
+    left: 2rem
+    bottom: 0.8rem
+    transform: translateY(-50%)
+    pointer-events: none
+    color: grey
+    &-1
+        bottom: 0.6rem
+.red 
+    color: $yellow
+
+.form-control:focus ~ .placeholder,
+.form-control:valid ~ .placeholder 
+    // display: none
+

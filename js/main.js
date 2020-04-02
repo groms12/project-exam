@@ -7,8 +7,8 @@ $(document).ready(function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            type: 'custom',
             bulletClass:'swiper__pagination__img',
+            bulletActiveClass: 'swiper__pagination__img--active',
           },
     });
 
@@ -30,8 +30,8 @@ $(document).ready(function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            type: 'custom',
-            bulletClass:'swiper__pagination__img',
+            bulletClass:'swiper__pagination__img',            
+            bulletActiveClass: 'swiper__pagination__img--active',
           },
           navigation: {
             nextEl: '.swiper-button-next-btn',

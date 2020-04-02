@@ -423,16 +423,22 @@ html {
 .header {
   background: url("../img/background/mountain.jpg") no-repeat center;
   background-size: cover; }
+  .header__list {
+    position: relative; }
   .header__check {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     display: none;
     cursor: pointer;
     background-color: #ffd11a;
     position: absolute;
-    bottom: -6.3rem;
+    top: 1rem;
     left: 0;
     z-index: 3;
-    padding: 1.5rem;
-    border-radius: 5px; }
+    padding: 1.785rem 0px 0.36rem 2.14rem;
+    border-radius: 0 0.36rem 0.36rem 0.36rem;
+    width: 17.14rem; }
   .header__menu {
     font-family: 'Roboto-Regular';
     list-style-type: none;
@@ -477,7 +483,6 @@ html {
       align-items: center;
       position: relative; }
       .header__cap__list__btn {
-        z-index: 4;
         text-transform: uppercase;
         color: #ffd11a;
         position: relative;
@@ -500,8 +505,6 @@ html {
         .header__cap__list__btn:hover {
           background-color: #ffd11a;
           color: black; }
-          .header__cap__list__btn:hover .header__check {
-            display: block; }
       .header__cap__list__logo {
         margin-right: 0; }
       .header__cap__list__text {
@@ -521,23 +524,27 @@ html {
           font-weight: 700;
           line-height: 1.714rem; }
       .header__cap__list__call {
+        cursor: pointer;
         outline: none;
         text-transform: uppercase;
         font-size: 0.857rem;
         width: 11.428rem;
         padding: 1.2rem;
         background-color: #ffd11a;
-        border-color: #ffd11a;
+        border: none;
         border-radius: 30px;
         margin-right: 1rem;
         margin-left: 0; }
         .header__cap__list__call:hover {
           background-color: rgba(39, 25, 48, 0.2);
+          border: 1px solid #ffd11a;
           color: #ffffff; }
   .header__main {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .header__main__people {
+      z-index: 3; }
     .header__main__text {
       line-height: 1.285rem;
       text-transform: uppercase;
@@ -547,6 +554,14 @@ html {
         flex-direction: column;
         margin-bottom: 2.14rem;
         font-family: 'Roboto-Light'; }
+        .header__main__text__info__border {
+          position: relative;
+          margin-top: -2rem; }
+          .header__main__text__info__border__title {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem; }
         .header__main__text__info__up {
           font-size: 3.428rem;
           color: #ffffff;
@@ -578,13 +593,29 @@ html {
 .swiper-pagination {
   margin-bottom: 4rem; }
 
-.swiper__pagination__img__galery {
-  margin-bottom: -2rem; }
+.swiper__pagination__img {
+  display: inline-block;
+  width: 1.57rem;
+  border-radius: 5px;
+  height: 4px;
+  background-color: #ffffff;
+  margin-right: 0.3rem; }
+  .swiper__pagination__img:hover {
+    background-color: #ffd11a; }
+  .swiper__pagination__img--active {
+    background-color: #ffd11a; }
+  .swiper__pagination__img__galery {
+    margin-bottom: -2rem; }
 
 .container {
   width: 85%;
   max-width: 1256px;
   margin: auto; }
+
+.header__list:hover .header__check {
+  display: flex;
+  position: absolute;
+  z-index: 3; }
 
 .menu {
   background: url("../img/background/menu_background.jpg") no-repeat center;
@@ -635,7 +666,6 @@ html {
       left: 12.214rem; }
     .section__clubs__mozaica__img__text {
       z-index: 2;
-      color: #ffffff;
       font-family: 'Roboto-Light';
       font-size: 2.57rem;
       font-weight: 300;
@@ -644,6 +674,9 @@ html {
       position: absolute;
       top: 8.2rem;
       left: 10.14rem; }
+      .section__clubs__mozaica__img__text__href {
+        color: #ffffff;
+        text-decoration: none; }
     .section__clubs__mozaica::before {
       content: '';
       position: absolute;
@@ -697,7 +730,7 @@ html {
       background-color: #ffd11a;
       border-radius: 30px;
       outline: none;
-      border-color: #ffd11a;
+      border: none;
       font-size: 0.857rem;
       font-family: 'Roboto-Bold';
       font-weight: 700;
@@ -705,6 +738,7 @@ html {
       text-transform: uppercase; }
       .section__free__form__button:hover {
         background-color: rgba(39, 25, 48, 0.2);
+        border: 1px solid #ffd11a;
         color: #ffffff; }
     .section__free__form__check {
       margin-top: 1.928rem;
@@ -827,7 +861,7 @@ html {
     height: 3.5rem;
     background-color: #ffd11a;
     outline: none;
-    border-color: #ffd11a;
+    border: none;
     border-radius: 30px;
     color: #1e1c34;
     font-family: 'Roboto-Bold';
@@ -839,7 +873,8 @@ html {
     right: 3rem;
     bottom: -3rem; }
     .section__cards__text__submit:hover {
-      background-color: rgba(255, 209, 26, 0.2); }
+      background-color: rgba(255, 209, 26, 0.2);
+      border: 1px solid #ffd11a; }
   .section__cards__text__checkbox {
     color: #94939a;
     font-family: 'Roboto-Light';
@@ -888,6 +923,22 @@ html {
 .check {
   margin-bottom: 1.57rem; }
 
+.cont {
+  position: relative; }
+
+.placeholder {
+  position: absolute;
+  left: 2rem;
+  bottom: 0.8rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: grey; }
+  .placeholder-1 {
+    bottom: 0.6rem; }
+
+.red {
+  color: #ffd11a; }
+
 .footer {
   margin-top: 8rem;
   background-color: #181728;
@@ -896,7 +947,6 @@ html {
   .footer__check {
     margin-bottom: 1.714rem; }
   .footer__menu {
-    margin-top: 4.57rem;
     padding-top: 3.785rem;
     display: flex;
     justify-content: space-between; }

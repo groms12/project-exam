@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <title>Спортивные клубы</title>    
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,13 +13,16 @@
                 <div class="container">
                 <div class="header__cap__list">
                     <img class="header__cap__img" src="img/header-logo/logo.png" alt="ЛЕТО">
-                    <span class="header__cap__list__btn">Выбрать клуб</span>
-                    <div class="header__check">
-                         <a class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
-                            <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </a> 
-                    
-                        <a class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
-                            <span class="header__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></a>
+                    <div class="header__list">
+                        <span class="header__cap__list__btn">Выбрать клуб</span>
+                        <div class="header__check">
+                            <a class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
+                                <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </a> 
+                                
+                            <a class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
+                                <span class="header__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></a>
+                        </div>
+
                     </div>
                     <img src="img/header-logo/icon.png" alt="логотип" class="header__cap__list__logo">
                     <h2 class="header__cap__list__text">Записаться на бесплатный визит</h2>
@@ -60,9 +63,12 @@
                     <div class="swiper-slide header__main">
                         <div class="header__main__text">
                             <div class="header__main__text__info">
-                                <span class="header__main__text__info__up">2 круглосуточные</span> 
-                                <span class="header__main__text__info__middle header__main__text__info__middle--yellow">клубные&nbsp;карты</span> 
-                                <span class="header__main__text__info__down">за 22 000 <img src="img/header-logo/rub.png" alt=""></span>
+                                <img class="header__main__text__info__border" src="img/border-title.png" alt="">
+                                    <div class="header__main__text__info__border__title">
+                                        <span class="header__main__text__info__up">2 круглосуточные</span> 
+                                        <span class="header__main__text__info__middle header__main__text__info__middle--yellow">клубные&nbsp;карты</span> 
+                                        <span class="header__main__text__info__down">за 22 000 <img src="img/header-logo/rub.png" alt=""></span>    
+                                    </div>
                             </div>
                             <div class="header__main__text__call">Только до 31 августа! <br>
                                 Закажите карту по телефону: <br>
@@ -77,11 +83,11 @@
                 </div>
                 <!-- If we need pagination -->               
                 <div class="swiper-pagination">
-                    <img src="img/bullet.png" class="swiper__pagination__img" alt="">
-                    <img src="img/bullet.png" class="swiper__pagination__img" alt="">
-                    <img src="img/bullet.png" class="swiper__pagination__img" alt="">
-                    <img src="img/bullet.png" class="swiper__pagination__img" alt="">
-                    <img src="img/bullet.png" class="swiper__pagination__img" alt="">
+                    <span class="swiper__pagination__img"></span>
+                    <span class="swiper__pagination__img"></span>
+                    <span class="swiper__pagination__img"></span>
+                    <span class="swiper__pagination__img"></span>
+                    <span class="swiper__pagination__img"></span>
                 </div>
             </div>
     </header>
@@ -95,7 +101,7 @@
                         <div class="section__clubs__mozaica__img">
                             <img src="img/main-section/clubs/club_mosaica.jpg" alt="клуб мозаика" class="section__clubs__img">
                             <img src="img/clubs/clubs.png" class="section__clubs__mozaica__img__border" alt="">
-                            <p class="section__clubs__mozaica__img__text">Лето Мозаика</p>
+                            <p class="section__clubs__mozaica__img__text"><a class="section__clubs__mozaica__img__text__href" href="">Лето Мозаика</a> </p>
                         </div>
                         <img src="img/mozaika/icons/place-icon.png" class="place-icon-before" alt="">
                         <div class="section__clubs__text"> «Лето» в ТРЦ «Мозаика» <br>
@@ -106,7 +112,7 @@
                         <div class="section__club__shelkovo__img">
                             <img src="img/main-section/clubs/club_shelkovo.jpg" alt="клуб Щелково" class="section__clubs__img">
                             <img src="img/clubs/clubs.png" class="section__clubs__mozaica__img__border" alt="">
-                            <p class="section__clubs__mozaica__img__text">Лето Щелково</p>
+                            <p class="section__clubs__mozaica__img__text"><a class="section__clubs__mozaica__img__text__href" href="">Лето Щелково</a></p>
                         </div>
                         <img src="img/mozaika/icons/place-icon.png" class="place-icon-before" alt="">
                         <div class="section__clubs__text">«Лето» в БЦ Спиртзавод <br>
@@ -186,11 +192,11 @@
                     </div>                                
                     <div class="swiper-button-prev-btn swiper-button-prev-btn__galery"></div>
                     <div class="swiper-pagination">
-                        <img src="img/bullet.png" class="swiper__pagination__img swiper__pagination__img__galery" alt="">
-                        <img src="img/bullet.png" class="swiper__pagination__img swiper__pagination__img__galery" alt="">
-                        <img src="img/bullet.png" class="swiper__pagination__img swiper__pagination__img__galery" alt="">
-                        <img src="img/bullet.png" class="swiper__pagination__img swiper__pagination__img__galery" alt="">
-                        <img src="img/bullet.png" class="swiper__pagination__img swiper__pagination__img__galery" alt="">
+                        <span class="swiper__pagination__img"></span>
+                        <span class="swiper__pagination__img"></span>
+                        <span class="swiper__pagination__img"></span>
+                        <span class="swiper__pagination__img"></span>
+                        <span class="swiper__pagination__img"></span>
                     </div>
                     <div class="swiper-button-next-btn swiper-button-next-btn__galery"></div>
                 </div>           
@@ -221,8 +227,15 @@
                             <input type="checkbox"> <span class="section__cards__text__check">Лето «Щелково» <br>
                                 <span class="section__cards__text__check__adress">Россия, г. Щелково, ул. Советская, д. 16</span></span>
                         </div>
-                        <input type="text" class="section__cards__text__input" placeholder="Ваше имя*">
-                        <input type="text" class="section__cards__text__input" placeholder="Ваш номер телефона*">
+                        <!-- <input type="text" class="section__cards__text__input" placeholder="Ваше имя*"> -->
+                        <div class="cont">
+                            <input type="text"  class="section__cards__text__input form-control">                              
+                                <div class="placeholder">Ваше имя <span class="red">*</span></div>
+                          </div>
+                          <div class="cont">
+                            <input type="text"  class="section__cards__text__input form-control">                              
+                                <div class="placeholder placeholder-1">Ваш номер телефона <span class="red">*</span></div>
+                          </div>
                         <div class="check">
                             <input type="checkbox"> <span class="section__cards__text__checkbox">Я согласен на обработку персональных данных</span>
                         </div>

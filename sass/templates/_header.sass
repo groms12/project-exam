@@ -3,16 +3,22 @@ html
 .header
     background:  url('../img/background/mountain.jpg') no-repeat center 
     background-size: cover
+    &__list
+        position: relative
     &__check        
+        display: flex
+        flex-direction: column
+        justify-content: space-around
         display: none
         cursor: pointer
         background-color: $yellow
         position: absolute
-        bottom: -6.3rem
+        top: 1rem
         left: 0
         z-index: 3
-        padding: 1.5rem
-        border-radius: 5px
+        padding: 1.785rem 0px 0.36rem 2.14rem
+        border-radius: 0 0.36rem 0.36rem 0.36rem
+        width: 17.14rem
     &__menu
         font-family: 'Roboto-Regular'
         list-style-type: none
@@ -58,7 +64,7 @@ html
             align-items: center
             position: relative
             &__btn
-                z-index: 4
+                // z-index: 4
                 text-transform: uppercase
                 color: $yellow
                 position: relative
@@ -81,8 +87,6 @@ html
                 &:hover
                     background-color: $yellow
                     color: $black
-                    .header__check
-                        display: block
             &__logo
                 margin-right: 0
             &__text
@@ -101,24 +105,28 @@ html
                     font-size: 1.357rem
                     font-weight: 700
                     line-height: 1.714rem
-            &__call        
+            &__call      
+                cursor: pointer  
                 outline: none
                 text-transform: uppercase
                 font-size: 0.857rem
                 width: 11.428rem
                 padding: 1.2rem 
                 background-color: $yellow
-                border-color: $yellow
+                border: none
                 border-radius: 30px
                 margin-right: 1rem
                 margin-left: 0
                 &:hover
                     background-color: rgba($rgba, 0.2) 
+                    border: 1px solid $yellow
                     color: $light
     &__main
         display: flex
         justify-content: center
         align-items: center
+        &__people
+            z-index: 3
         &__text      
             line-height: 1.285rem
             text-transform: uppercase
@@ -128,6 +136,14 @@ html
                 flex-direction: column
                 margin-bottom: 2.14rem
                 font-family: 'Roboto-Light'
+                &__border
+                    position: relative
+                    margin-top: -2rem
+                    &__title
+                        position: absolute
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: 2rem
                 &__up
                     font-size: 3.428rem
                     color: $light
@@ -159,18 +175,29 @@ html
         margin-bottom: 4rem
     &__pagination
         &__img
+            display: inline-block
+            width: 1.57rem
+            border-radius: 5px
+            height: 4px
+            background-color: $light
+            margin-right: 0.3rem
+            &:hover
+                background-color: $yellow
+            &--active
+                background-color: $yellow
             &__galery
                 margin-bottom: -2rem
 .container
     width: 85%
     max-width: 1256px
     margin: auto
-    
+.header__list:hover .header__check
+    display: flex
+    position: absolute
+    z-index: 3
 .menu
     background: url('../img/background/menu_background.jpg') no-repeat center
     margin-top: -1rem
-
-
 
 		
 
