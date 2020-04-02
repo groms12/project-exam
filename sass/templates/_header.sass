@@ -3,46 +3,62 @@ html
 .header
     background:  url('../img/background/mountain.jpg') no-repeat center 
     background-size: cover
-    position: relative
-    &__slider
+    &__check        
+        display: none
+        cursor: pointer
+        background-color: $yellow
         position: absolute
-        bottom: 4rem
-        left: 52rem
+        bottom: -6.3rem
+        left: 0
+        z-index: 3
+        padding: 1.5rem
+        border-radius: 5px
     &__menu
-        margin-top: -0.7rem
         font-family: 'Roboto-Regular'
         list-style-type: none
         display: flex
-        flex-direction: row
-        justify-content: center
+        justify-content: space-around
         align-items: center
-        background-color: $bg
         text-transform: uppercase
         padding-top: 1rem 
         padding-bottom: 1rem
+        position: relative
         &__list
             text-decoration: none
             color: $light
             font-size: 1rem
             font-weight: 400
             line-height: 1.285rem
-            margin-right: 2.5rem
-            margin-left: 2.5rem
+            margin-right: 2rem
+            margin-left: 2rem
+        &__clubs
+            &__check
+                margin-left: 0.3rem
+                color: $black
+                font-size: 1rem
+                font-weight: 300
+                line-height: 1.428rem
+                font-family: 'Roboto-Medium'
+                font-weight: 500
+                margin-bottom: 1rem
+                &__adress
+                    font-family: 'Roboto-Light'
+                    font-weight: 300
     &__cap
         font-family: 'Roboto-Bold'
-        display: flex
-        justify-content: space-around
-        background: url('../img/background/cap-background.jpg') no-repeat center
+        background: url('../img/background/cap-background.jpg') no-repeat center 
         background-size: cover
         &__img
             margin-top: 2.3rem 
             margin-bottom: 2.3rem
-            margin-left: 10rem
+            margin-right: 9rem
         &__list
             display: flex
             justify-content: space-around
             align-items: center
+            position: relative
             &__btn
+                z-index: 4
                 text-transform: uppercase
                 color: $yellow
                 position: relative
@@ -51,6 +67,7 @@ html
                 border: 1px solid $yellow
                 border-radius: 30px
                 padding: 1.28rem 2.428rem 1.28rem 4.07rem 
+                margin-right: 4rem
                 &::before
                     content: ''
                     width: 0.714rem
@@ -61,22 +78,23 @@ html
                     position: absolute
                     left: 2rem
                     top: 1.1rem
+                &:hover
+                    background-color: $yellow
+                    color: $black
+                    .header__check
+                        display: block
             &__logo
-                margin-left: 5.785rem
-                margin-right: 1rem
+                margin-right: 0
             &__text
                 max-width: 8.785rem
                 color: $light
                 font-size: 1rem
-                display: inline-block
-                margin-right: 5.214rem
             &__phone
                 position: relative
                 font-family: 'Roboto-Light'
                 color: $light
                 font-size: 0.85rem
-                display: inline-block
-                margin-right: 1.57rem
+                margin-left: 4rem
                 &__tel
                     text-decoration: none
                     color: $light
@@ -92,7 +110,8 @@ html
                 background-color: $yellow
                 border-color: $yellow
                 border-radius: 30px
-                margin-right: 7rem
+                margin-right: 6rem
+                margin-left: 0
                 &:hover
                     background-color: rgba($rgba, 0.2) 
                     color: $light
@@ -147,7 +166,13 @@ html
         &__img
             &__galery
                 margin-bottom: -2rem
+.container
+    width: 85%
+    max-width: 1256px
+    margin: auto
     
+.menu
+    background: url('../img/background/menu_background.jpg') no-repeat center
 
 
 

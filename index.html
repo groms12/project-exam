@@ -9,12 +9,18 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-
             <div class="header__cap">
-                <img class="header__cap__img" src="img/header-logo/logo.png" alt="ЛЕТО">
+                <div class="container">
                 <div class="header__cap__list">
+                    <img class="header__cap__img" src="img/header-logo/logo.png" alt="ЛЕТО">
                     <span class="header__cap__list__btn">Выбрать клуб</span>
+                    <div class="header__check">
+                         <a class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
+                            <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </a> 
+                    
+                        <a class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
+                            <span class="header__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></a>
+                    </div>
                     <img src="img/header-logo/icon.png" alt="логотип" class="header__cap__list__logo">
                     <h2 class="header__cap__list__text">Записаться на бесплатный визит</h2>
                     <label class="header__cap__list__phone" for="phone"><span class="span">Звоните круглосуточно!</span> <br>
@@ -22,24 +28,28 @@
                     </label>
                     <button class="header__cap__list__call">перезвоните мне</button>
                 </div>
+                </div>
             </div>
 
-            <ul class="header__menu">
-                <li><a class="header__menu__list" href="#">клубы</a></li>                
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">услуги</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">клубные карты</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">расписание</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">наши тренеры</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">галерея</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">наши акции</a></li>
-                <li><img src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">контакты</a></li>
+            <ul class="menu">
+                <div class="container header__menu">
+                    <li><a class="header__menu__list" href="#">клубы</a></li>                
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">услуги</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">клубные карты</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">расписание</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">наши тренеры</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">галерея</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">наши акции</a></li>
+                    <li><img src="img/border.png" alt=""></li>
+                    <li><a class="header__menu__list" href="#">контакты</a></li>
+                </div>
+                
             </ul>
 
             <div class="swiper-container swiper-container-s1">
@@ -74,12 +84,10 @@
                     <img src="img/bullet.png" class="swiper__pagination__img" alt="">
                 </div>
             </div>
-        </div>
     </header>
 
     <main>
         <section class="section">
-            <div class="container">
                 <h2 class="section__title">Выберите свой клуб</h2>
                 <div class="section__clubs">
                     <div class="section__clubs__mozaica">
@@ -105,11 +113,9 @@
                         <img src="img/mozaika/icons/place-icon.png" class="place-icon-after" alt="">
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="section__free">
-            <div class="container">
                 <h2 class="section__title section__title--light section__free__title">Записаться на бесплатный визит</h2>
                 <form action="send.php" class="section__free__form" method="POST">
                     <div class="form">
@@ -121,11 +127,9 @@
                         <input type="checkbox" class="section__free__form__check"> <span class="section__free__form__check__text">Я согласен на обработку персональных данных</span> 
                     </div>
                 </form>
-            </div>
         </section>
 
         <section class="section__service">
-            <div class="container">
                 <div class="section__title">услуги наших клубов</div>
                 <div class="swiper-container swiper-container-s2">
                     <!-- Additional required wrapper -->
@@ -160,11 +164,9 @@
                     <div class="swiper-button-prev-btn"></div>
                     <div class="swiper-button-next-btn"></div>
                 </div>                
-            </div>
         </section>
 
         <section class="section__photoes">
-            <div class="container">
                 <h2 class="section__title">Фотогалерея</h2>
                 <div class="swiper-container swiper-container-s3">
                     <!-- Additional required wrapper -->
@@ -186,11 +188,9 @@
                     </div>
                     <div class="swiper-button-next-btn swiper-button-next-btn__galery"></div>
                 </div>           
-            </div>
         </section>
 
         <section class="section__cards">
-            <div class="container">
                 <h2 class="section__title">Клубные карты</h2>
                 <div class="section__cards__info">
                     <div class="section__cards__card">
@@ -221,12 +221,10 @@
                         <input type="submit" class="section__cards__text__submit" value="Забронировать карту">
                     </form>
                 </div>
-            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
             <div class="footer__menu">
                 <div class="footer__menu__logo"><img src="img/header-logo/logo.png" alt=""></div>
                 <div class="footer__menu__summer">
@@ -266,7 +264,9 @@
                     <button class="header__cap__list__call footer__menu__call__btn">перезвоните мне</button>
                 </div>
             </div>
-            <img class="footer__href__img" src="img/footer-icon/footer.png" alt="">
+            <div class="footer__img">
+                <img class="footer__href__img" src="img/footer-icon/footer.png" alt="">
+            </div>
             <div class="footer__href">
                 <p class="footer__href__text">&#169; Фитнес-центр «Лето», 2017. Все права защищены.</p>
                 <div class="footer__href__icons">
@@ -277,7 +277,6 @@
                    <a href="https://www.twitter.com/"><img class="footer__href__icons__icon footer__href__icons__icon__twitter" src="img/footer-icon/twitter.png" alt=""></a> 
                 </div>
             </div>
-        </div>
     </footer>
         
     <a href="#" class="scroll-top"></a>

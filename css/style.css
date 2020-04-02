@@ -422,47 +422,62 @@ html {
 
 .header {
   background: url("../img/background/mountain.jpg") no-repeat center;
-  background-size: cover;
-  position: relative; }
-  .header__slider {
+  background-size: cover; }
+  .header__check {
+    display: none;
+    cursor: pointer;
+    background-color: #ffd11a;
     position: absolute;
-    bottom: 4rem;
-    left: 52rem; }
+    bottom: -6.3rem;
+    left: 0;
+    z-index: 3;
+    padding: 1.5rem;
+    border-radius: 5px; }
   .header__menu {
-    margin-top: -0.7rem;
     font-family: 'Roboto-Regular';
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #220a16;
     text-transform: uppercase;
     padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    position: relative; }
     .header__menu__list {
       text-decoration: none;
       color: #ffffff;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.285rem;
-      margin-right: 2.5rem;
-      margin-left: 2.5rem; }
+      margin-right: 2rem;
+      margin-left: 2rem; }
+    .header__menu__clubs__check {
+      margin-left: 0.3rem;
+      color: black;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.428rem;
+      font-family: 'Roboto-Medium';
+      font-weight: 500;
+      margin-bottom: 1rem; }
+      .header__menu__clubs__check__adress {
+        font-family: 'Roboto-Light';
+        font-weight: 300; }
   .header__cap {
     font-family: 'Roboto-Bold';
-    display: flex;
-    justify-content: space-around;
     background: url("../img/background/cap-background.jpg") no-repeat center;
     background-size: cover; }
     .header__cap__img {
       margin-top: 2.3rem;
       margin-bottom: 2.3rem;
-      margin-left: 10rem; }
+      margin-right: 9rem; }
     .header__cap__list {
       display: flex;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
       .header__cap__list__btn {
+        z-index: 4;
         text-transform: uppercase;
         color: #ffd11a;
         position: relative;
@@ -470,7 +485,8 @@ html {
         font-size: 0.857rem;
         border: 1px solid #ffd11a;
         border-radius: 30px;
-        padding: 1.28rem 2.428rem 1.28rem 4.07rem; }
+        padding: 1.28rem 2.428rem 1.28rem 4.07rem;
+        margin-right: 4rem; }
         .header__cap__list__btn::before {
           content: '';
           width: 0.714rem;
@@ -481,22 +497,23 @@ html {
           position: absolute;
           left: 2rem;
           top: 1.1rem; }
+        .header__cap__list__btn:hover {
+          background-color: #ffd11a;
+          color: black; }
+          .header__cap__list__btn:hover .header__check {
+            display: block; }
       .header__cap__list__logo {
-        margin-left: 5.785rem;
-        margin-right: 1rem; }
+        margin-right: 0; }
       .header__cap__list__text {
         max-width: 8.785rem;
         color: #ffffff;
-        font-size: 1rem;
-        display: inline-block;
-        margin-right: 5.214rem; }
+        font-size: 1rem; }
       .header__cap__list__phone {
         position: relative;
         font-family: 'Roboto-Light';
         color: #ffffff;
         font-size: 0.85rem;
-        display: inline-block;
-        margin-right: 1.57rem; }
+        margin-left: 4rem; }
         .header__cap__list__phone__tel {
           text-decoration: none;
           color: #ffffff;
@@ -512,7 +529,8 @@ html {
         background-color: #ffd11a;
         border-color: #ffd11a;
         border-radius: 30px;
-        margin-right: 7rem; }
+        margin-right: 6rem;
+        margin-left: 0; }
         .header__cap__list__call:hover {
           background-color: rgba(39, 25, 48, 0.2);
           color: #ffffff; }
@@ -567,6 +585,14 @@ html {
 
 .swiper__pagination__img__galery {
   margin-bottom: -2rem; }
+
+.container {
+  width: 85%;
+  max-width: 1256px;
+  margin: auto; }
+
+.menu {
+  background: url("../img/background/menu_background.jpg") no-repeat center; }
 
 .section__title {
   margin-top: 4.14rem;
@@ -868,12 +894,14 @@ html {
 
 .footer {
   margin-top: 8rem;
-  background-color: #181728; }
+  background-color: #181728;
+  display: flex;
+  flex-direction: column; }
   .footer__check {
     margin-bottom: 1.714rem; }
   .footer__menu {
     padding-left: 12rem;
-    padding-right: 7rem;
+    padding-right: 5rem;
     margin-top: 4.57rem;
     padding-top: 3.785rem;
     display: flex;
@@ -925,10 +953,7 @@ html {
   padding-top: 2rem;
   padding-bottom: 2.928rem;
   display: flex;
-  justify-content: space-around;
-  margin: auto; }
-  .footer__href__img {
-    margin-left: 8rem; }
+  justify-content: space-around; }
   .footer__href__text {
     font-size: 1rem;
     font-weight: 300;
@@ -953,3 +978,7 @@ html {
         padding: 0.714rem 1.07rem; }
       .footer__href__icons__icon__twitter {
         padding: 0.857rem; }
+
+.footer__img {
+  display: flex;
+  justify-content: center; }
