@@ -7,6 +7,9 @@
         &__card
             position: relative
             margin-left: 3.5rem
+            &__mozaica
+                margin-left: 0
+                margin-right: 10rem
             &__before
                 position: absolute
                 top: 0
@@ -26,6 +29,13 @@
             flex-direction: column
             justify-content: space-between
             position: relative
+            &__mozaica
+                margin-left: 3rem
+                margin-right: 0
+            &__checks
+                position: absolute
+                left: 3rem
+                bottom: -6rem
             &__submit
                 width: 13.64rem
                 height: 3.5rem
@@ -42,6 +52,8 @@
                 position: absolute
                 right: 3rem
                 bottom: -3rem
+                &__mozaica
+                    bottom: -5rem
                 &:hover                    
                     background-color: rgba($yellow, 0.2) 
                     border: 1px solid $yellow
@@ -62,6 +74,16 @@
                 color: #1e1c34
                 border: 1px solid #1e1c34
                 border-radius: 30px
+                &__mozaica
+                    border-radius: 0
+                    text-align: center
+                    padding: 1.5rem 2rem
+                    margin-right: 0.5rem
+                    &__label
+                        display: block
+                        margin: -0.5rem
+                        &__2
+                            text-transform: none
                 &:hover
                     background-color: $yellow
                     cursor: pointer
@@ -83,6 +105,8 @@
                 border: 1px solid #b7b7b7
                 margin-bottom: 0.2rem 
                 margin-top: 1rem
+                &__mozaica
+                    width: 95%
 [type="radio"] 
     display: none
 .radio
@@ -102,8 +126,10 @@
         bottom: 0.6rem
 .red 
     color: $yellow
-
-.form-control:focus ~ .placeholder,
-.form-control:valid ~ .placeholder 
-    // display: none
+.section__cards__text__radio--active
+    background-color: $yellow
+    cursor: pointer
+.radio
+    &__mozaica
+        display: flex
 

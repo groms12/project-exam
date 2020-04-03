@@ -106,7 +106,8 @@
                         <p class="section__clubs__mozaica__img__text"><a class="section__clubs__mozaica__img__text__href" href="">Лето Мозаика</a> </p>
                     </div>
                 </div>
-                <div class="section__clubs__img">
+                <div class="section__clubs__mozaica__info">
+                    <div class="section__clubs__img">
                     <img src="img/mozaika/icons/place-icon.png" class="section__clubs__info__img" alt="">
                     <img src="img/mozaika/icons/clock-icon.png" class="section__clubs__info__img" alt="">
                     <img src="img/mozaika/icons/phone-icon.png" class="section__clubs__info__img" alt="">
@@ -121,7 +122,9 @@
                         <span class="section__clubs__text__adress">+ 7 (495) 266-02-48</span> </p>
                     <p class="section__clubs__text section__clubs__text--left"> E-mail: <br>
                         <span class="section__clubs__text__adress">sell@letofit.ru</span> </p>
-                </div>                        
+                </div>                   
+                </div>
+                     
             </div>
         </div>
     </section>
@@ -165,45 +168,68 @@
         <div class="container">
                 <h2 class="section__title">Клубные карты</h2>
             <div class="section__cards__info">
-                <div class="section__cards__card">
+                <div class="section__cards__card section__cards__card__mozaica">
                     <img src="img/card-before.jpg" alt="" class="section__cards__card__before">
                     <img src="img/card.jpg" alt="" class="section__cards__card__middle">
                     <img src="img/card-before.jpg" alt="" class="section__cards__card__after">
                 </div>
-                <form action="send.php" method="POST" class="section__cards__text">
-                    <div class="radio">
-                        <input type="radio" name="radio"><label for="radio" class="section__cards__text__radio">1 месяц</label> 
-                        <input type="radio" name="radio1"><label for="radio1" class="section__cards__text__radio">6 месяцев</label> 
-                        <input type="radio" name="radio2"><label for="radio2" class="section__cards__text__radio">9 месяцев</label> 
-                        <input type="radio" name="radio3"><label for="radio3" class="section__cards__text__radio">12 месяцев</label> 
-                    </div>
-                    <div class="check">
-                        <input type="checkbox" checked> <span class="section__cards__text__check">Лето «Мозаика» <br>
-                            <span class="section__cards__text__check__adress">Россия, Москва, 7-я Кожуховская ул., 9</span> </span> 
-                    </div>
-                    <div class="check">
-                        <input type="checkbox"> <span class="section__cards__text__check">Лето «Щелково» <br>
-                            <span class="section__cards__text__check__adress">Россия, г. Щелково, ул. Советская, д. 16</span></span>
-                    </div>
+                <form action="send.php" method="POST" class="section__cards__text  section__cards__text__mozaica">
+                    <div class="radio radio__mozaica">
+                        <input type="radio" id="check1" onclick="check1()">
+                        <label for="check1" class="section__cards__text__radio section__cards__text__radio__mozaica label1">
+                            <span class="section__cards__text__radio__mozaica__label">1 месяц </span> 
+                            <span class="section__cards__text__radio__mozaica__label">- соло -</span>                             
+                            <span class="section__cards__text__radio__mozaica__label">2 999</span>                              
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                        </label>
+                        <input type="radio" id="check2" onclick="check()">
+                        <label for="check2" class="section__cards__text__radio section__cards__text__radio__mozaica label2">
+                           <span class="section__cards__text__radio__mozaica__label">6 месяцев</span> 
+                           <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
+                           <span class="section__cards__text__radio__mozaica__label"> 9 900</span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                        </label>
+                        <input type="radio" id="check3" onclick="check()">
+                        <label for="check3" class="section__cards__text__radio section__cards__text__radio__mozaica label3">
+                           <span class="section__cards__text__radio__mozaica__label">9 месяцев</span> 
+                           <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
+                           <span class="section__cards__text__radio__mozaica__label">11 900 </span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                        </label>
+                        <input type="radio" id="check4" onclick="check()">
+                        <label for="check4" class="section__cards__text__radio section__cards__text__radio__mozaica label4">
+                            <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
+                            <span class="section__cards__text__radio__mozaica__label">- дневная -</span>
+                            <span class="section__cards__text__radio__mozaica__label">9 900 </span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                        </label>
+                        <input type="radio" id="check5" onclick="check()">
+                        <label for="check5" class="section__cards__text__radio section__cards__text__radio__mozaica label5">
+                            <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
+                            <span class="section__cards__text__radio__mozaica__label">- соло -</span>
+                            <span class="section__cards__text__radio__mozaica__label">15 900 </span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                        </label>
+                    </div> 
                     <!-- <input type="text" class="section__cards__text__input" placeholder="Ваше имя*"> -->
                     <div class="cont">
-                        <input type="text"  class="section__cards__text__input form-control">                              
+                        <input type="text"  class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
                             <div class="placeholder">Ваше имя <span class="red">*</span></div>
                     </div>
                     <div class="cont">
-                        <input type="text"  class="section__cards__text__input form-control">                              
+                        <input type="text"  class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
                             <div class="placeholder placeholder-1">Ваш номер телефона <span class="red">*</span></div>
                     </div>
-                    <div class="check">
-                        <input type="checkbox"> <span class="section__cards__text__checkbox">Я согласен на обработку персональных данных</span>
-                    </div>
-                    <input type="submit" class="section__cards__text__submit" value="Забронировать карту">
+                        <div class="check section__cards__text__checks">
+                            <input type="checkbox"> <span class="section__cards__text__checkbox">Я согласен на обработку персональных данных</span>
+                        </div>
+                        <input type="submit" class="section__cards__text__submit section__cards__text__submit__mozaica" value="Забронировать карту">
                 </form>
             </div>
             </div>
     </section>
 
-    <section class="section__photoes">
+    <section class="section__photoes section__photoes__mozaica">
         <div class="containe">
                 <h2 class="section__title">Фотогалерея</h2>
             <div class="swiper-container swiper-container-s3">

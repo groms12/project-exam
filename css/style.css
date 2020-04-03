@@ -688,6 +688,10 @@ html {
     margin-right: 1rem;
     position: relative;
     border: 1px solid rgba(39, 25, 48, 0.14); }
+    .section__clubs__mozaica__info {
+      margin-left: 3rem;
+      display: flex;
+      flex-direction: row; }
     .section__clubs__mozaica__main {
       border: none; }
     .section__clubs__mozaica__img__border {
@@ -928,6 +932,9 @@ html {
 .swiper-pagination {
   outline: none; }
 
+.section__photoes__mozaica {
+  margin-top: 15rem; }
+
 .section__cards__info {
   margin-top: 2.214rem;
   display: flex;
@@ -936,6 +943,9 @@ html {
 .section__cards__card {
   position: relative;
   margin-left: 3.5rem; }
+  .section__cards__card__mozaica {
+    margin-left: 0;
+    margin-right: 10rem; }
   .section__cards__card__before {
     position: absolute;
     top: 0;
@@ -956,6 +966,13 @@ html {
   flex-direction: column;
   justify-content: space-between;
   position: relative; }
+  .section__cards__text__mozaica {
+    margin-left: 3rem;
+    margin-right: 0; }
+  .section__cards__text__checks {
+    position: absolute;
+    left: 3rem;
+    bottom: -6rem; }
   .section__cards__text__submit {
     width: 13.64rem;
     height: 3.5rem;
@@ -972,6 +989,8 @@ html {
     position: absolute;
     right: 3rem;
     bottom: -3rem; }
+    .section__cards__text__submit__mozaica {
+      bottom: -5rem; }
     .section__cards__text__submit:hover {
       background-color: rgba(255, 209, 26, 0.2);
       border: 1px solid #ffd11a; }
@@ -992,6 +1011,16 @@ html {
     color: #1e1c34;
     border: 1px solid #1e1c34;
     border-radius: 30px; }
+    .section__cards__text__radio__mozaica {
+      border-radius: 0;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-right: 0.5rem; }
+      .section__cards__text__radio__mozaica__label {
+        display: block;
+        margin: -0.5rem; }
+        .section__cards__text__radio__mozaica__label__2 {
+          text-transform: none; }
     .section__cards__text__radio:hover {
       background-color: #ffd11a;
       cursor: pointer; }
@@ -1013,6 +1042,8 @@ html {
     border: 1px solid #b7b7b7;
     margin-bottom: 0.2rem;
     margin-top: 1rem; }
+    .section__cards__text__input__mozaica {
+      width: 95%; }
 
 [type="radio"] {
   display: none; }
@@ -1038,6 +1069,13 @@ html {
 
 .red {
   color: #ffd11a; }
+
+.section__cards__text__radio--active {
+  background-color: #ffd11a;
+  cursor: pointer; }
+
+.radio__mozaica {
+  display: flex; }
 
 .footer {
   padding-left: 5rem;

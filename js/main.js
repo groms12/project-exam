@@ -74,4 +74,45 @@ $(document).ready(function () {
         });
     });
 
+    $("#check1").click(function(){
+        $(".label1").toggleClass("section__cards__text__radio--active");
+        $(".label2").removeClass("section__cards__text__radio--active");
+        $(".label3").removeClass("section__cards__text__radio--active");
+        $(".label4").removeClass("section__cards__text__radio--active");
+        $(".label5").removeClass("section__cards__text__radio--active");
+        return false;
+    });
+    $("#check2").click(function(){
+        $(".label1").removeClass("section__cards__text__radio--active");
+        $(".label2").toggleClass("section__cards__text__radio--active");
+        $(".label3").removeClass("section__cards__text__radio--active");
+        $(".label4").removeClass("section__cards__text__radio--active");
+        $(".label5").removeClass("section__cards__text__radio--active");
+        return false;
+    });
+    $("#check3").click(function(){
+        $(".label1").removeClass("section__cards__text__radio--active");
+        $(".label2").removeClass("section__cards__text__radio--active");
+        $(".label3").toggleClass("section__cards__text__radio--active");
+        $(".label4").removeClass("section__cards__text__radio--active");
+        $(".label5").removeClass("section__cards__text__radio--active");
+        return false;
+    });
+    $("#check4").click(function(){
+        $(".label1").removeClass("section__cards__text__radio--active");
+        $(".label2").removeClass("section__cards__text__radio--active");
+        $(".label3").removeClass("section__cards__text__radio--active");
+        $(".label4").toggleClass("section__cards__text__radio--active");
+        $(".label5").removeClass("section__cards__text__radio--active");
+        return false;
+    });
+    $("#check5").click(function(){
+        $(".label1").removeClass("section__cards__text__radio--active");
+        $(".label2").removeClass("section__cards__text__radio--active");
+        $(".label3").removeClass("section__cards__text__radio--active");
+        $(".label4").removeClass("section__cards__text__radio--active");
+        $(".label5").toggleClass("section__cards__text__radio--active");
+        return false;
+    });
+
 });
