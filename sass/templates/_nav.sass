@@ -1,0 +1,26 @@
+.section
+    &__nav
+        margin-top: 0.5rem
+        margin-bottom: 1rem
+        font-size: 0.928rem
+        line-height: 4.14rem
+        border-bottom: 0.5px solid rgba(39, 25, 48, 0.14)
+        &__href
+            text-decoration: none
+            font-family: 'Roboto-Medium'
+            font-weight: 500
+            color: $black
+            &::after
+                content: ''
+                display: inline-block
+                width: 4px
+                height: 4px
+                margin-left: 0.5rem
+                margin-right: 0.5rem
+                border-top: 1px solid $black
+                border-right: 1px solid $black
+                transform: rotate(45deg)
+        &__text
+            color: #949494
+            font-family: 'Roboto-Light'
+            font-weight: 300

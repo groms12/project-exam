@@ -19,9 +19,23 @@
             margin-top: 1.5rem
             margin-bottom: 2.214rem
     &__clubs
+        margin-top: 3rem
         display: flex
         justify-content: center
         margin-bottom: 4rem
+        &__img
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__info
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            margin-bottom: -6rem
+            margin-top: 2rem
+            &__img
+                margin-bottom: 2rem
         &__text
             margin-top: 2.428rem
             text-align: center
@@ -29,6 +43,11 @@
             font-size: 1.285rem
             font-weight: 500
             margin-bottom: 2.428rem
+            &--left
+                text-align: left
+                margin-left: 1rem
+                margin-top: 0rem
+                margin-bottom: 2rem
             &__adress
                 font-family: 'Roboto-Light'
                 font-weight: 300
@@ -36,6 +55,8 @@
             margin-right: 1rem
             position: relative
             border: 1px solid rgba(39, 25, 48, 0.14)
+            &__main
+                border: none
             &__img
                 &__border
                     z-index: 2
@@ -54,7 +75,7 @@
                     left: 10.14rem
                     &__href
                         color: $light
-                        text-decoration: none
+                        text-decoration: none    
             &::before
                 content: ''
                 position: absolute

@@ -55,4 +55,23 @@ $(document).ready(function () {
         return false;
     });
 
+    var bg = document.getElementById('btn');
+
+    document.getElementById('check').addEventListener("mouseover", function(){
+            bg.style.background = "#ffd11a";
+            bg.style.color = 'black'
+            this.addEventListener("mouseout", function(){
+                bg.style.color = "#ffd11a";
+                bg.style.background = "";
+            });
+        });
+        document.getElementById('btn').addEventListener("mouseover", function(){
+            bg.style.background = "#ffd11a";
+            bg.style.color = 'black'
+            this.addEventListener("mouseout", function(){
+                bg.style.color = "#ffd11a";
+                bg.style.background = "";
+        });
+    });
+
 });
