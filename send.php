@@ -30,7 +30,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка сайта';
-    $mail->Body    = "Пользователь оставил данные $(userName)";
+    $mail->Body    = "Пользователь оставил данные ".$userName, $userPhone;
 
     if ($mail->send())  {
         echo "ok";

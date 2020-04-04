@@ -1,12 +1,15 @@
 .section
     &__free
         background: url('../img/background/background.jpg') no-repeat center
+        background-size: cover
+        padding: 1rem 0 3rem 0
         &__title
-            padding-top: 3.714rem
+            // padding-top: 4.5rem
             &::after
                 display: none
                 padding-top: 3.7rem
         &__form
+            position: relative
             display: flex
             flex-direction: column
             justify-content: center
@@ -18,6 +21,7 @@
                 border-radius: 30px
                 margin-right: 0.428rem
                 outline: none
+                border: none
                 padding-left: 1rem
             &__button
                 width: 11.428rem
@@ -36,12 +40,24 @@
                     border: 1px solid $yellow
                     color: $light
             &__check
-                margin-top: 1.928rem
-                margin-bottom: 4.5rem
+                // margin-top: 1.928rem
                 &__text
-                    color: $light
+                    color: lightgrey
                     font-size: 0.785rem
                     font-family: 'Roboto-Regular'
                     font-weight: 400
                     line-height: 1.574rem
                     text-transform: uppercase
+
+span.invalid 
+    color: $yellow
+    position: absolute
+#userName-error
+    bottom: 3rem
+    left: 20rem
+#userPhone-error
+    bottom: 3rem
+    left: 40rem
+#policyCheckbox-error
+    bottom: 0.7rem
+    left: 35rem

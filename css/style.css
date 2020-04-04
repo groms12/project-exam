@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -388,9 +389,186 @@ template {
   font-style: normal;
   font-display: swap; }
 
-@media screen and (max-width: 1800px) {
-  .header__main__people {
-    margin-right: -10rem; } }
+.modal__policy {
+  position: relative; }
+
+.modal--call, .modal--free {
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 28, 52, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal--call--visible, .modal--free--visible {
+    opacity: 1;
+    visibility: visible; }
+
+.modal__title {
+  background-color: #ffd11a;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #2e2e2e;
+  font-family: 'Roboto-Regular';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 22.98px;
+  text-transform: uppercase; }
+
+.modal__input {
+  margin-bottom: 1rem;
+  margin-top: -1rem; }
+
+.modal__dialog {
+  position: relative;
+  max-width: 36.36rem;
+  padding: 2.357rem 3.5rem 1.928rem;
+  color: #ffffff; }
+
+.modal__close {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/close.png") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer;
+  outline: none; }
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1c34;
+  padding: 2.57rem;
+  margin-top: -1.5rem; }
+
+.modal__button {
+  margin: auto;
+  margin-top: 1.2rem; }
+
+.modal__checkbox {
+  line-height: 13.99px;
+  margin-left: 3rem; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked ~ .policy__label::before {
+    background: #ffd11a url("../img/tick.svg") no-repeat center/0.8rem;
+    border: 1px solid #ffd11a; }
+
+.policy__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.142rem; }
+  .policy__label--center {
+    justify-content: center; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
+
+.ymap-container-2 {
+  margin-top: -1rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/yandex-before-load-marker-2.jpg") #ffffff no-repeat;
+  width: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2); }
+
+.ymap-container-1 {
+  position: relative;
+  margin-top: -1rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/yandex-before-load-marker-1.jpg") #ffffff no-repeat;
+  width: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2); }
+
+#map-yandex-1 {
+  position: relative;
+  z-index: 7;
+  margin: auto;
+  width: 100%;
+  height: 30rem;
+  cursor: pointer;
+  background-color: transparent; }
+
+#map-yandex-2 {
+  position: relative;
+  z-index: 7;
+  margin: auto;
+  width: 100%;
+  height: 30rem;
+  cursor: pointer;
+  background-color: transparent; }
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+  color: #000;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  transition: opacity .7s ease;
+  opacity: 0; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  content: '';
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform:rotate(0)  }
+  to {
+    transform:rotate(359deg)  } }
+
+@keyframes rotation {
+  from {
+    transform:rotate(0)  }
+  to {
+    transform:rotate(359deg)  } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 .scroll-top {
   cursor: pointer;
@@ -433,6 +611,9 @@ html {
   background-size: cover; }
   .header__list {
     position: relative; }
+    .header__list:hover .header__cap__list__btn::before {
+      border-bottom: 2px solid black;
+      border-right: 2px solid black; }
   .header__check {
     display: flex;
     flex-direction: column;
@@ -457,15 +638,27 @@ html {
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative; }
+    .header__menu_1 {
+      font-family: 'Roboto-Regular';
+      list-style-type: none;
+      text-transform: uppercase;
+      padding-top: 1rem;
+      position: relative; }
     .header__menu__list {
       text-decoration: none;
       color: #ffffff;
       font-size: 1rem;
       font-weight: 400;
-      line-height: 1.285rem;
-      margin-right: 2rem;
-      margin-left: 2rem; }
+      line-height: 1.285rem; }
+      .header__menu__list_1 {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.285rem;
+        margin-left: 5rem; }
     .header__menu__clubs__check {
+      text-decoration: none;
       margin-left: 0.3rem;
       color: black;
       font-size: 1rem;
@@ -483,13 +676,17 @@ html {
     background-size: cover; }
     .header__cap__img {
       margin-top: 2.3rem;
-      margin-bottom: 2.3rem;
-      margin-right: 9rem; }
+      margin-bottom: 2.3rem; }
     .header__cap__list {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       position: relative; }
+      .header__cap__list__phones {
+        margin-top: 1.3rem; }
+      .header__cap__list__registration {
+        display: inline-block; }
       .header__cap__list__btn {
         text-transform: uppercase;
         color: #ffd11a;
@@ -498,8 +695,7 @@ html {
         font-size: 0.857rem;
         border: 1px solid #ffd11a;
         border-radius: 30px;
-        padding: 1.28rem 2.428rem 1.28rem 4.07rem;
-        margin-right: 4rem; }
+        padding: 1.28rem 2.428rem 1.28rem 4.07rem; }
         .header__cap__list__btn::before {
           content: '';
           width: 0.714rem;
@@ -516,21 +712,26 @@ html {
       .header__cap__list__logo {
         margin-right: 0; }
       .header__cap__list__text {
+        text-decoration: none;
+        cursor: pointer;
         max-width: 8.785rem;
         color: #ffffff;
-        font-size: 1rem; }
+        font-size: 1rem;
+        display: inline-block; }
       .header__cap__list__phone {
         position: relative;
+        display: inline-block;
         font-family: 'Roboto-Light';
         color: #ffffff;
-        font-size: 0.85rem;
-        margin-left: 4rem; }
+        font-size: 0.85rem; }
         .header__cap__list__phone__tel {
           text-decoration: none;
           color: #ffffff;
           font-size: 1.357rem;
           font-weight: 700;
-          line-height: 1.714rem; }
+          line-height: 1.714rem;
+          outline: none;
+          cursor: pointer; }
       .header__cap__list__call {
         cursor: pointer;
         outline: none;
@@ -541,8 +742,9 @@ html {
         background-color: #ffd11a;
         border: none;
         border-radius: 30px;
-        margin-right: 1rem;
-        margin-left: 0; }
+        margin-left: 0.7rem;
+        position: relative;
+        top: -0.7rem; }
         .header__cap__list__call:hover {
           background-color: rgba(39, 25, 48, 0.2);
           border: 1px solid #ffd11a;
@@ -660,7 +862,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    max-width: 100%; }
   .section__clubs__info {
     display: flex;
     justify-content: flex-start;
@@ -698,7 +901,9 @@ html {
       z-index: 2;
       position: absolute;
       top: 8.14rem;
-      left: 12.214rem; }
+      left: 12.214rem;
+      top: 27%;
+      left: 30%; }
     .section__clubs__mozaica__img__text {
       z-index: 2;
       font-family: 'Roboto-Light';
@@ -708,26 +913,16 @@ html {
       text-transform: uppercase;
       position: absolute;
       top: 8.2rem;
-      left: 10.14rem; }
+      left: 10.14rem;
+      top: 27.2%;
+      left: 24.9%; }
       .section__clubs__mozaica__img__text__href {
         color: #ffffff;
         text-decoration: none; }
-    .section__clubs__mozaica::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 22.785rem;
-      background-color: rgba(39, 25, 48, 0.7); }
   .section__clubs__shelkovo {
     margin-left: 1rem;
     position: relative;
     border: 1px solid rgba(39, 25, 48, 0.14); }
-    .section__clubs__shelkovo::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 22.785rem;
-      background-color: rgba(39, 25, 48, 0.7); }
 
 .place-icon-before {
   position: absolute;
@@ -802,13 +997,14 @@ html {
         margin-bottom: 1rem; }
 
 .section__free {
-  background: url("../img/background/background.jpg") no-repeat center; }
-  .section__free__title {
-    padding-top: 3.714rem; }
-    .section__free__title::after {
-      display: none;
-      padding-top: 3.7rem; }
+  background: url("../img/background/background.jpg") no-repeat center;
+  background-size: cover;
+  padding: 1rem 0 3rem 0; }
+  .section__free__title::after {
+    display: none;
+    padding-top: 3.7rem; }
   .section__free__form {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -820,6 +1016,7 @@ html {
       border-radius: 30px;
       margin-right: 0.428rem;
       outline: none;
+      border: none;
       padding-left: 1rem; }
     .section__free__form__button {
       width: 11.428rem;
@@ -837,16 +1034,29 @@ html {
         background-color: rgba(39, 25, 48, 0.2);
         border: 1px solid #ffd11a;
         color: #ffffff; }
-    .section__free__form__check {
-      margin-top: 1.928rem;
-      margin-bottom: 4.5rem; }
-      .section__free__form__check__text {
-        color: #ffffff;
-        font-size: 0.785rem;
-        font-family: 'Roboto-Regular';
-        font-weight: 400;
-        line-height: 1.574rem;
-        text-transform: uppercase; }
+    .section__free__form__check__text {
+      color: lightgrey;
+      font-size: 0.785rem;
+      font-family: 'Roboto-Regular';
+      font-weight: 400;
+      line-height: 1.574rem;
+      text-transform: uppercase; }
+
+span.invalid {
+  color: #ffd11a;
+  position: absolute; }
+
+#userName-error {
+  bottom: 3rem;
+  left: 20rem; }
+
+#userPhone-error {
+  bottom: 3rem;
+  left: 40rem; }
+
+#policyCheckbox-error {
+  bottom: 0.7rem;
+  left: 35rem; }
 
 .section__service {
   position: relative; }
@@ -880,8 +1090,29 @@ html {
     right: 0;
     margin: auto; }
   .swiper-button-prev-btn__galery {
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
     top: 12.8rem;
-    left: 24rem; }
+    left: 24rem;
+    width: 2.57rem;
+    height: 2.57rem;
+    background-color: #ffd11a;
+    border-radius: 50%;
+    outline: none; }
+    .swiper-button-prev-btn__galery::after {
+      content: '';
+      width: 0.6rem;
+      height: 0.6rem;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0rem;
+      bottom: 0;
+      left: 0.2rem;
+      right: 0;
+      margin: auto; }
 
 .swiper-button-next-btn {
   cursor: pointer;
@@ -908,8 +1139,29 @@ html {
     left: 0;
     margin: auto; }
   .swiper-button-next-btn__galery {
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
     top: 12.8rem;
-    right: 24rem; }
+    right: 24rem;
+    width: 2.57rem;
+    height: 2.57rem;
+    background-color: #ffd11a;
+    border-radius: 50%;
+    outline: none; }
+    .swiper-button-next-btn__galery::after {
+      content: '';
+      width: 0.6rem;
+      height: 0.6rem;
+      border-right: 1px solid black;
+      border-top: 1px solid black;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0.2rem;
+      left: 0;
+      margin: auto; }
 
 .swiper-slide__text {
   text-align: center;
@@ -938,115 +1190,121 @@ html {
 .section__photoes__mozaica {
   margin-top: 15rem; }
 
-.section__cards__info {
-  margin-top: 2.214rem;
-  display: flex;
-  justify-content: space-between; }
-
-.section__cards__card {
-  position: relative;
-  margin-left: 3.5rem; }
-  .section__cards__card__mozaica {
-    margin-left: 0;
-    margin-right: 10rem; }
-  .section__cards__card__before {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .section__cards__card__middle {
-    position: absolute;
-    z-index: 3;
-    left: 6.5rem;
-    top: 4.214rem; }
-  .section__cards__card__before {
-    position: absolute;
-    left: 11.857rem;
-    top: 8.5rem; }
-
-.section__cards__text {
-  margin-right: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative; }
-  .section__cards__text__mozaica {
-    margin-left: 3rem;
-    margin-right: 0; }
-  .section__cards__text__checks {
-    position: absolute;
-    left: 3rem;
-    bottom: -6rem; }
-  .section__cards__text__submit {
-    width: 13.64rem;
-    height: 3.5rem;
-    background-color: #ffd11a;
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    color: #1e1c34;
-    font-family: 'Roboto-Bold';
-    font-size: 0.857rem;
-    font-weight: 700;
-    line-height: 1.574rem;
-    text-transform: uppercase;
-    position: absolute;
-    right: 3rem;
-    bottom: -3rem; }
-    .section__cards__text__submit__mozaica {
-      bottom: -5rem; }
-    .section__cards__text__submit:hover {
-      background-color: rgba(255, 209, 26, 0.2);
-      border: 1px solid #ffd11a; }
-  .section__cards__text__checkbox {
-    color: #94939a;
-    font-family: 'Roboto-Light';
-    font-size: 0.785rem;
-    font-weight: 300;
-    line-height: 1.574rem;
-    text-transform: uppercase; }
-  .section__cards__text__radio {
-    padding: 1rem 2rem;
-    font-size: 0.857rem;
-    font-weight: 400;
-    line-height: 1.574rem;
-    font-family: 'Roboto-Regular';
-    text-transform: uppercase;
-    color: #1e1c34;
-    border: 1px solid #1e1c34;
-    border-radius: 30px; }
-    .section__cards__text__radio__mozaica {
-      border-radius: 0;
-      text-align: center;
-      padding: 1.5rem 2rem;
-      margin-right: 0.5rem; }
-      .section__cards__text__radio__mozaica__label {
-        display: block;
-        margin: -0.5rem; }
-        .section__cards__text__radio__mozaica__label__2 {
-          text-transform: none; }
-    .section__cards__text__radio:hover {
+.section__cards {
+  margin-bottom: 8rem; }
+  .section__cards__info {
+    margin-top: 2.214rem;
+    display: flex;
+    justify-content: space-between; }
+  .section__cards__card {
+    position: relative;
+    margin-left: 3.5rem; }
+    .section__cards__card__mozaica {
+      margin-left: 0;
+      margin-right: 10rem; }
+    .section__cards__card__before {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .section__cards__card__middle {
+      position: absolute;
+      z-index: 3;
+      left: 6.5rem;
+      top: 4.214rem; }
+    .section__cards__card__before {
+      position: absolute;
+      left: 11.857rem;
+      top: 8.5rem; }
+  .section__cards__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+    .section__cards__text__mozaica {
+      margin-left: 3rem;
+      margin-right: 0; }
+    .section__cards__text__checks {
+      position: absolute;
+      left: 3rem;
+      bottom: -6rem; }
+    .section__cards__text__submit {
+      width: 13.64rem;
+      height: 3.5rem;
       background-color: #ffd11a;
-      cursor: pointer; }
-  .section__cards__text__check {
-    font-size: 1.14rem;
-    line-height: 1.57rem;
-    color: #2e2e2e;
-    font-family: 'Roboto-Medium';
-    font-weight: 500; }
-    .section__cards__text__check__adress {
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      color: #1e1c34;
+      font-family: 'Roboto-Bold';
+      font-size: 0.857rem;
+      font-weight: 700;
+      line-height: 1.574rem;
+      text-transform: uppercase;
+      position: absolute;
+      right: 3rem;
+      bottom: -3rem; }
+      .section__cards__text__submit__mozaica {
+        position: relative;
+        margin-top: -3rem; }
+      .section__cards__text__submit:hover {
+        background-color: rgba(255, 209, 26, 0.2);
+        border: 1px solid #ffd11a; }
+    .section__cards__text__checkbox {
+      color: #94939a;
       font-family: 'Roboto-Light';
-      font-weight: 300; }
-  .section__cards__text__input {
-    width: 35.57rem;
-    height: 3.214rem;
-    padding-left: 2rem;
-    border-radius: 30px;
-    outline: none;
-    border: 1px solid #b7b7b7;
-    margin-bottom: 0.2rem;
-    margin-top: 1rem; }
-    .section__cards__text__input__mozaica {
-      width: 95%; }
+      font-size: 0.785rem;
+      font-weight: 300;
+      line-height: 1.574rem;
+      text-transform: uppercase; }
+    .section__cards__text__radio {
+      padding: 1rem 2rem;
+      font-size: 0.857rem;
+      font-weight: 400;
+      line-height: 1.574rem;
+      font-family: 'Roboto-Regular';
+      text-transform: uppercase;
+      color: #1e1c34;
+      border: 1px solid #1e1c34;
+      border-radius: 30px; }
+      .section__cards__text__radio__mozaica {
+        border-radius: 0;
+        text-align: center;
+        padding: 1.5rem 2rem;
+        margin-right: 0.5rem; }
+        .section__cards__text__radio__mozaica__label {
+          display: block;
+          margin: -0.5rem; }
+          .section__cards__text__radio__mozaica__label__2 {
+            text-transform: none; }
+      .section__cards__text__radio:hover {
+        background-color: #ffd11a;
+        cursor: pointer; }
+    .section__cards__text__check {
+      font-size: 1.14rem;
+      line-height: 1.57rem;
+      color: #2e2e2e;
+      font-family: 'Roboto-Medium';
+      font-weight: 500; }
+      .section__cards__text__check__adress {
+        font-family: 'Roboto-Light';
+        font-weight: 300;
+        margin-left: 2rem; }
+    .section__cards__text__input {
+      width: 35.57rem;
+      height: 3.214rem;
+      padding-left: 2rem;
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #b7b7b7;
+      margin-bottom: 0.2rem;
+      margin-top: 1rem; }
+      .section__cards__text__input__mozaica {
+        width: 95%; }
+
+.agree {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem; }
 
 [type="radio"] {
   display: none; }
@@ -1057,20 +1315,22 @@ html {
 .check {
   margin-bottom: 1.57rem; }
 
-.cont {
-  position: relative; }
-
-.placeholder {
+.place_holder {
+  cursor: text;
   position: absolute;
-  left: 2rem;
-  bottom: 0.8rem;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: grey; }
-  .placeholder-1 {
-    bottom: 0.6rem; }
+  top: 2.3rem;
+  left: 2.2rem;
+  display: none;
+  color: lightgrey; }
 
-.red {
+.cont input:invalid + .place_holder {
+  display: inline; }
+
+.cont {
+  position: relative;
+  overflow: hidden; }
+
+.place_holder span {
   color: #ffd11a; }
 
 .section__cards__text__radio--active {
@@ -1083,22 +1343,24 @@ html {
 .footer {
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top: 8rem;
+  margin-top: -1rem;
   background-color: #181728;
   display: flex;
   flex-direction: column; }
   .footer__check {
-    margin-bottom: 1.714rem; }
+    margin-top: -1rem; }
   .footer__menu {
     padding-top: 3.785rem;
     display: flex;
     justify-content: space-between; }
+    .footer__menu__logo {
+      margin-top: 1rem; }
     .footer__menu__call {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 1rem; }
       .footer__menu__call__btn {
-        margin-top: 1rem;
-        margin-left: 4rem; }
+        margin-top: 2rem; }
     .footer__menu__list {
       list-style-type: none;
       color: #ffffff;
@@ -1113,28 +1375,23 @@ html {
         color: #ffd11a;
         font-weight: 700;
         font-family: 'Roboto-Bold'; }
-    .footer__menu__clubs {
-      display: flex;
-      flex-direction: column; }
-      .footer__menu__clubs__check {
+    .footer__menu__clubs__check {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.428rem;
+      font-family: 'Roboto-Medium';
+      font-weight: 500; }
+      .footer__menu__clubs__check__adress {
         color: #ffffff;
-        font-size: 1rem;
+        font-family: 'Roboto-Light';
         font-weight: 300;
-        line-height: 1.428rem;
-        font-family: 'Roboto-Medium';
-        font-weight: 500; }
-        .footer__menu__clubs__check__adress {
-          font-family: 'Roboto-Light';
-          font-weight: 300; }
+        margin-left: 2rem; }
 
 .span {
-  position: absolute;
-  right: 0;
-  top: 0; }
+  margin-left: 2rem; }
   .span-footer {
-    position: absolute;
-    right: 1.4rem;
-    top: 0; }
+    margin-left: 4.5rem; }
 
 .footer__href {
   padding-top: 3rem;
@@ -1168,3 +1425,170 @@ html {
 .footer__img {
   display: flex;
   justify-content: center; }
+
+.header__menu__nonactive {
+  flex-direction: column;
+  position: absolute;
+  top: 9.3rem;
+  left: 0;
+  background-color: #220a16;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  width: 17.86rem; }
+  .header__menu__nonactive--active {
+    z-index: 5;
+    opacity: 1;
+    visibility: visible; }
+
+@media screen and (max-width: 1800px) {
+  .header__main__people {
+    margin-right: -10rem; } }
+
+@media screen and (max-width: 1400px) {
+  .header__main__people {
+    margin-right: -20rem; }
+  .section__cards__text {
+    margin-right: 0; }
+  .section__cards__card__before {
+    left: 8.857rem; }
+  .section__cards__card__middle {
+    left: 4.5rem; } }
+
+@media screen and (max-width: 1250px) {
+  .place-icon-before, .place-icon-after {
+    display: none; }
+  html {
+    font-size: 12px; }
+  .header__main__people {
+    margin-right: -40rem; }
+  .section__clubs__mozaica {
+    margin-bottom: 4rem;
+    margin-left: 1rem; }
+    .section__clubs__mozaica__img__text {
+      left: 27.9%;
+      top: 28.2%; } }
+
+@media screen and (max-width: 1200px) {
+  .section__cards__card {
+    display: none; }
+  .section__cards__text {
+    margin: auto; } }
+
+@media screen and (max-width: 992px) {
+  .footer__menu {
+    display: none; }
+  .free__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section__photoes {
+    display: none; }
+  .section__free__form__input {
+    margin-bottom: 1rem; }
+  .section__cards__text {
+    margin: auto;
+    width: 100%; }
+  .section__cards__card {
+    display: none; }
+  .menu__border {
+    opacity: 0;
+    visibility: hidden; }
+  .menu-button {
+    z-index: 5;
+    display: block;
+    position: absolute;
+    left: 35px;
+    top: 10rem;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    border: none; }
+    .menu-button::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.2s;
+      margin-top: -7px; }
+    .menu-button::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.2s;
+      margin-top: 7px; }
+    .menu-button--active {
+      height: 0; }
+      .menu-button--active::before {
+        transform: rotate(45deg);
+        margin-top: 0; }
+      .menu-button--active::after {
+        transform: rotate(-45deg);
+        margin-top: 0; }
+  .header {
+    padding-bottom: 3rem; }
+    .header__cap__list__call {
+      margin-bottom: 1rem; }
+    .header__menu__list {
+      display: none; }
+    .header__main__text {
+      margin-top: 4rem; }
+    .header__main__people {
+      display: none; }
+  .swiper-pagination {
+    display: none; }
+  .section__clubs {
+    flex-direction: column;
+    align-items: center; }
+    .section__clubs__shelkovo {
+      margin-right: 1rem; }
+  .footer__menu {
+    flex-wrap: wrap;
+    margin-bottom: 1rem; } }
+
+@media screen and (max-width: 850px) {
+  .menu-button {
+    top: 16rem; }
+  .header__cap__list {
+    justify-content: center; }
+  .header__list {
+    margin-right: 1rem;
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 760px) {
+  .footer__href {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 569px) {
+  .menu-button {
+    top: 10rem; }
+  .header__cap__list__registration, .header__cap__list__phones {
+    display: none; }
+  .header__main__text__info {
+    display: none; }
+  .header__main__text__call {
+    text-align: center;
+    margin-top: -1rem; }
+  .radio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .section__cards__text {
+    margin: auto; }
+    .section__cards__text__input {
+      width: 100%; }
+    .section__cards__text__radio {
+      margin-bottom: 1rem; }
+  .section__clubs__mozaica__img__border, .section__clubs__mozaica__img__text {
+    display: none; } }

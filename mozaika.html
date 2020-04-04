@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клуб Мозаика</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,25 +17,29 @@
                 <div class="header__list">
                     <span class="header__cap__list__btn" id="btn">Выбрать клуб</span>
                     <div class="header__check" id="check">
-                        <a class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
+                        <a href="http://marina12.ru/Exam/mozaika.html" class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
                             <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </a> 
                             
-                        <a class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
+                        <a href="http://marina12.ru/Exam/shelkovo.html" class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
                             <span class="header__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></a>
                     </div>
 
                 </div>
-                <img src="img/header-logo/icon.png" alt="логотип" class="header__cap__list__logo">
-                <h2 class="header__cap__list__text">Записаться на бесплатный визит</h2>
-                <label class="header__cap__list__phone" for="phone"><span class="span">Звоните круглосуточно!</span> <br>
-                    <a class="header__cap__list__phone__tel" name="phone" href="tel:+74952660278">+7 (495) 266 02 78</a> 
-                </label>
-                <button class="header__cap__list__call">перезвоните мне</button>
+                <div class="header__cap__list__registration">
+                    <img src="img/header-logo/icon.png" alt="логотип" class="header__cap__list__logo">
+                    <a class="header__cap__list__text"  data-toggle="modal-free">Записаться на <br> бесплатный визит</a>
+                </div>
+                <div class="header__cap__list__phones">
+                    <label class="header__cap__list__phone" for="phone"><span class="span">Звоните круглосуточно!</span> <br>
+                        <a class="header__cap__list__phone__tel" name="phone" href="tel:+74952660278">+7 (495) 266 02 78</a> 
+                    </label>
+                    <button class="header__cap__list__call" data-toggle="modal-call">перезвоните мне</button>
+                </div>
             </div>
             </div>
         </div>
 
-        <ul class="menu">
+        <ul class="menu ">
             <div class="container header__menu">
                 <li><a class="header__menu__list" href="#">клубы</a></li>                
                 <li><img src="img/border.png" alt=""></li>
@@ -52,7 +57,6 @@
                 <li><img src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">контакты</a></li>
             </div>
-            
         </ul>
 
         <div class="swiper-container swiper-container-s1">
@@ -91,8 +95,8 @@
 <main>
     <section class="section__nav">
         <div class="container">
-            <a class="section__nav__href" href="">Главная </a>
-            <a class="section__nav__href" href="">Клубы</a>
+            <a class="section__nav__href" href="http://marina12.ru/Exam/">Главная </a>
+            <a class="section__nav__href" href="http://marina12.ru/Exam/">Клубы</a>
             <span class="section__nav__text">Лето «Мозаика»</span>
         </div>
     </section>
@@ -101,7 +105,7 @@
             <div class="section__clubs">
                 <div class="section__clubs__mozaica section__clubs__mozaica__main">
                     <div class="section__clubs__mozaica__img">
-                        <img src="img/main-section/clubs/club_mosaica.jpg" alt="клуб мозаика" class="section__clubs__img">
+                        <img src="img/main-section/clubs/mozaica.jpg" alt="клуб мозаика" class="section__clubs__img">
                         <img src="img/clubs/clubs.png" class="section__clubs__mozaica__img__border" alt="">
                         <p class="section__clubs__mozaica__img__text"><a class="section__clubs__mozaica__img__text__href" href="">Лето Мозаика</a> </p>
                     </div>
@@ -180,51 +184,54 @@
                             <span class="section__cards__text__radio__mozaica__label">1 месяц </span> 
                             <span class="section__cards__text__radio__mozaica__label">- соло -</span>                             
                             <span class="section__cards__text__radio__mozaica__label">2 999</span>                              
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
                         <input type="radio" id="check2" onclick="check()">
                         <label for="check2" class="section__cards__text__radio section__cards__text__radio__mozaica label2">
                            <span class="section__cards__text__radio__mozaica__label">6 месяцев</span> 
                            <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
                            <span class="section__cards__text__radio__mozaica__label"> 9 900</span> 
-                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
                         <input type="radio" id="check3" onclick="check()">
                         <label for="check3" class="section__cards__text__radio section__cards__text__radio__mozaica label3">
                            <span class="section__cards__text__radio__mozaica__label">9 месяцев</span> 
                            <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
                            <span class="section__cards__text__radio__mozaica__label">11 900 </span> 
-                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
                         <input type="radio" id="check4" onclick="check()">
                         <label for="check4" class="section__cards__text__radio section__cards__text__radio__mozaica label4">
                             <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
                             <span class="section__cards__text__radio__mozaica__label">- дневная -</span>
                             <span class="section__cards__text__radio__mozaica__label">9 900 </span>
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                         </label>
                         <input type="radio" id="check5" onclick="check()">
                         <label for="check5" class="section__cards__text__radio section__cards__text__radio__mozaica label5">
                             <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
                             <span class="section__cards__text__radio__mozaica__label">- соло -</span>
                             <span class="section__cards__text__radio__mozaica__label">15 900 </span>
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                         </label>
                     </div> 
                     <!-- <input type="text" class="section__cards__text__input" placeholder="Ваше имя*"> -->
-                    <div class="cont">
-                        <input type="text"  class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
-                            <div class="placeholder">Ваше имя <span class="red">*</span></div>
-                    </div>
-                    <div class="cont">
-                        <input type="text"  class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
-                            <div class="placeholder placeholder-1">Ваш номер телефона <span class="red">*</span></div>
-                    </div>
-                        <div class="check section__cards__text__checks">
-                            <input type="checkbox"> <span class="section__cards__text__checkbox">Я согласен на обработку персональных данных</span>
+                    <label class="cont">
+                        <input required="1" type="text" id="text-1" class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
+                        <div class="place_holder">Ваше имя <span class="red">*</span></div>
+                    </label>
+                    <label class="cont">
+                        <input required="1" type="tel" id="text-2" class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
+                        <div class="place_holder">Ваш номер телефона <span class="red">*</span></div>
+                    </label>
+                    <div class="agree">
+                        <div class="check">
+                            <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox section__free__form__check">
+                            <label for="policy-checkbox" class="policy__label section__free__form__check__text">Я согласен на обработку персональных данных</label> 
                         </div>
                         <input type="submit" class="section__cards__text__submit section__cards__text__submit__mozaica" value="Забронировать карту">
-                </form>
+                
+                    </div></form>
             </div>
             </div>
     </section>
@@ -236,13 +243,13 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide swiper-slide-galery">a</div>
+                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo2.jpg" alt=""></div>
                     <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-slide-galery">a</div>
-                    <div class="swiper-slide swiper-slide-galery">a</div>
-                    <div class="swiper-slide swiper-slide-galery">a</div>                        
+                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo3.jpg" alt=""></div>
+                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo4.jpg" alt=""></div>
+                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo5.jpg" alt=""></div>                        
                 </div>                                
-                <div class="swiper-button-prev-btn swiper-button-prev-btn__galery"></div>
+                <div class="swiper-button-prev-btn__galery"></div>
                 <div class="swiper-pagination swiper-pagination-galery">
                     <span class="swiper__pagination__img"></span>
                     <span class="swiper__pagination__img"></span>
@@ -250,7 +257,7 @@
                     <span class="swiper__pagination__img"></span>
                     <span class="swiper__pagination__img"></span>
                 </div>
-                <div class="swiper-button-next-btn swiper-button-next-btn__galery"></div>
+                <div class="swiper-button-next-btn__galery"></div>
             </div>           
             </div>
     </section>
@@ -299,22 +306,26 @@
             <form action="send.php" class="section__free__form" method="POST">
                 <div class="form">
                     <input type="text" class="section__free__form__input" placeholder="Ваше имя...">
-                    <input type="text" class="section__free__form__input" placeholder="Ваш номер телефона...">
+                    <input type="tel" class="section__free__form__input" placeholder="Ваш номер телефона...">
                     <input type="submit" class="section__free__form__button" value="Записаться">
                 </div> 
                 <div class="check">
-                    <input type="checkbox" class="section__free__form__check"> <span class="section__free__form__check__text">Я согласен на обработку персональных данных</span> 
+                    <input type="checkbox"  class="policy__checkbox" id="check--Box"> 
+                    <label for="check--Box" class="policy__label section__cards__text__checkbox">Я согласен на обработку персональных данных</label>
                 </div>
             </form>
         </div>
     </section>
+    
 </main>
-
+<div class="ymap-container-1">
+        <div class="loader loader-default"></div>
+        <div id="map-yandex-1"></div>
+    </div>
 <footer class="footer">
+    
     <div class="container">
-        <div class="footer__yandex">
-
-        </div>
+        
         <div class="footer__menu">
             <div class="footer__menu__logo"><img src="img/header-logo/logo.png" alt=""></div>
             <div class="footer__menu__summer">
@@ -338,13 +349,15 @@
             </div>
             <div class="footer__menu__clubs">
                 <p class="footer__menu__list__title">Выбрать клуб </p>
-                <div class="footer__check">
-                    <input type="checkbox"> <span class="footer__menu__clubs__check">Лето «Мозаика» <br>
-                        <span class="footer__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </span> 
+                <div class="footer__check" >
+                    <input type="checkbox" class="policy__checkbox" id="check-Box"> 
+                        <label for="check-Box" class="policy__label footer__menu__clubs__check"> Лето «Мозаика»
+                        </label><span class="footer__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span>
                 </div>
-                <div class="footer__check">
-                    <input type="checkbox"> <span class="footer__menu__clubs__check">Лето «Щелково» <br>
-                        <span class="footer__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></span>
+                <div class="footer__check" >
+                    <input type="checkbox" class="policy__checkbox" id="checkBox"> 
+                        <label for="checkBox" class="policy__label footer__menu__clubs__check">Лето «Щелково» 
+                        </label><span class="footer__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span>
                 </div>
             </div>
             <div class="footer__menu__call">
@@ -371,6 +384,43 @@
        
 </footer>
     
+
+<div class="modal modal--call">
+    <div class="modal__dialog">
+        <button class="modal__close modal__close__call"></button>
+        <h3 class="modal__title">Обратный звонок</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+            <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
+            <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
+            <div class="policy modal__policy">
+                <input type="checkbox" class="policy__checkbox section__free__form__check modal__check" id="policy_checkbox" name="policyCheckbox" >
+                <label for="policy_checkbox" class="policy__label section__free__form__check__text modal__checkbox">Я согласен на обработку <br>
+                    персональных данных</label>
+            </div> 
+            <button class="section__free__form__button modal__button">перезвоните мне</button>
+        </form>
+        <!-- /.form modal__form -->
+    </div>
+</div>
+
+<div class="modal modal--free">
+    <div class="modal__dialog">
+        <button class="modal__close modal__close__free"></button>
+        <h3 class="modal__title">Записаться на визит</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+            <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
+            <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
+            <div class="policy modal__policy">
+                <input type="checkbox" class="policy__checkbox section__free__form__check modal__check" id="policy_checkbox" name="policyCheckbox" >
+                <label for="policy_checkbox" class="policy__label section__free__form__check__text modal__checkbox">Я согласен на обработку <br>
+                    персональных данных</label>
+            </div>
+            <button class="section__free__form__button modal__button">Записаться</button>
+        </form>
+        <!-- /.form modal__form -->
+    </div>
+</div>
+
 <a href="#" class="scroll-top"></a>
 
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

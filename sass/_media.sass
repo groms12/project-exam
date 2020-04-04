@@ -1,7 +1,212 @@
+.header
+    &__menu
+        &__nonactive
+            flex-direction: column
+            position: absolute
+            top: 9.3rem
+            left: 0
+            background-color: $bg
+            padding: 1rem
+            opacity: 0
+            visibility: hidden
+            width: 17.86rem
+            &--active
+                z-index: 5
+                opacity: 1
+                visibility: visible
 @media screen and ( max-width: 1800px )
     .header
         &__main
             &__people
                 margin-right: -10rem
+
+@media screen and ( max-width: 1400px )
+    .header
+        &__main
+            &__people
+                margin-right: -20rem
+    .section
+        &__cards
+            &__text
+                margin-right: 0
+            &__card
+                &__before
+                    left: 8.857rem
+                &__middle
+                    left: 4.5rem
+
+@media screen and ( max-width: 1250px )
+    .place
+        &-icon
+            &-before, &-after
+                display: none
+    html 
+        font-size: 12px
+    .header
+        &__main
+            &__people
+                margin-right: -40rem
+    .section
+        &__clubs
+            &__mozaica
+                margin-bottom: 4rem
+                margin-left: 1rem
+                &__img
+                    &__text
+                        left: 27.9%
+                        top: 28.2%
+@media screen and (max-width: 1200px)
+    .section
+        &__cards
+            &__card
+                display: none
+            &__text
+                margin: auto
+                
+@media screen and ( max-width: 992px )
+    .footer
+        &__menu
+            display: none
+    .free
+        &__form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    .section
+        &__photoes
+            display: none
+        &__free
+            &__form
+                &__input
+                    margin-bottom: 1rem
+        &__cards
+            &__text
+                margin: auto
+                width: 100%
+            &__card
+                display: none
+    .menu
+        &__border
+            opacity: 0
+            visibility: hidden
+    .menu-button
+        z-index: 5
+        display: block
+        position: absolute
+        left: 35px
+        top: 10rem
+        width: 30px
+        height: 2px
+        background-color: $light
+        border: none
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #fff
+            transition: transform 0.2s
+            margin-top: -7px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #fff
+            transition: transform 0.2s
+            margin-top: 7px
+        &--active
+            height: 0
+            &::before
+                transform: rotate(45deg)
+                margin-top: 0
+            &::after
+                transform: rotate(-45deg)
+                margin-top: 0
+    .header
+        padding-bottom: 3rem
+        &__cap
+            &__list
+                &__call
+                    margin-bottom: 1rem
+        &__menu
+            &__list
+                display: none
+        &__main
+            &__text
+                margin-top: 4rem
+            &__people
+                display: none
+    .swiper-pagination
+        display: none
+    .section
+        &__clubs
+            flex-direction: column
+            align-items: center
+            &__shelkovo
+                margin-right: 1rem
+    .footer
+        &__menu
+            flex-wrap: wrap
+            margin-bottom: 1rem
+@media screen and ( max-width: 850px ) 
+    .menu-button
+        top: 16rem
+    .header
+        &__cap
+            &__list
+                justify-content: center
+        &__list
+            margin-right: 1rem
+            margin-left: 1rem
+
+@media screen and ( max-width: 760px ) 
+    .footer
+        &__href
+            flex-direction: column
+            align-items: center
+
+@media screen and ( max-width: 569px )
+    .menu-button
+        top: 10rem
+    .header
+        &__cap
+            &__list
+                &__registration, &__phones
+                    display: none
+        &__main
+            &__text
+                &__info
+                    display: none
+                &__call
+                    text-align: center
+                    margin-top: -1rem
+    .radio
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    .section
+        &__cards
+            &__text
+                margin: auto
+                &__input
+                    width: 100%
+                &__radio
+                    margin-bottom: 1rem
+        &__clubs
+            &__mozaica
+                &__img
+                    &__border, &__text
+                        display: none
+
+
+
 
     

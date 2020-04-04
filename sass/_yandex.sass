@@ -1,0 +1,76 @@
+.ymap-container-2 
+  margin-top: -1rem
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  background: url("../img/yandex-before-load-marker-2.jpg") #ffffff no-repeat
+  width: 100%
+  margin: auto
+  background-position: center center
+  background-size: cover
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2)
+.ymap-container-1 
+  position: relative
+  margin-top: -1rem
+  overflow: hidden
+  cursor: pointer
+  background: url("../img/yandex-before-load-marker-1.jpg") #ffffff no-repeat
+  width: 100%
+  margin: auto
+  background-position: center center
+  background-size: cover
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2)
+#map-yandex-1 
+  position: relative
+  z-index: 7
+  margin: auto
+  width: 100%
+  height: 30rem
+  cursor: pointer
+  background-color: transparent
+#map-yandex-2 
+  position: relative
+  z-index: 7
+  margin: auto
+  width: 100%
+  height: 30rem
+  cursor: pointer
+  background-color: transparent
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader 
+  color: #000
+  top: -100%
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 15
+  transition: opacity .7s ease
+  opacity: 0
+.loader.is-active 
+  top: 0
+  opacity: 1
+.loader-default:after 
+  content: ''
+  width: 48px
+  height: 48px
+  border-radius: 50%
+@-webkit-keyframes rotation 
+  from 
+    transform:rotate(0)  
+  to 
+    transform:rotate(359deg)  
+@keyframes rotation 
+  from 
+    transform:rotate(0)  
+  to 
+    transform:rotate(359deg)  
+@-webkit-keyframes blink 
+  from 
+    opacity: .5
+  to 
+    opacity: 1
+@keyframes blink 
+  from 
+    opacity: .5
+  to 
+    opacity: 1

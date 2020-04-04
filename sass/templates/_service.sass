@@ -33,8 +33,29 @@
                     right: 0
                     margin: auto
                 &__galery
+                    cursor: pointer
+                    z-index: 3
+                    position: absolute                
                     top: 12.8rem
                     left: 24rem
+                    width: 2.57rem
+                    height: 2.57rem 
+                    background-color: $yellow
+                    border-radius: 50%
+                    outline: none
+                    &::after
+                        content: ''
+                        width: 0.6rem
+                        height: 0.6rem                
+                        border-left: 1px solid $black 
+                        border-bottom: 1px solid $black
+                        transform: rotate(45deg)
+                        position: absolute
+                        top: 0rem
+                        bottom: 0
+                        left: 0.2rem
+                        right: 0
+                        margin: auto
         &-next
             &-btn
                 cursor: pointer
@@ -61,8 +82,29 @@
                     left: 0
                     margin: auto                
                 &__galery
+                    cursor: pointer
+                    z-index: 3
+                    position: absolute
                     top: 12.8rem
                     right: 24rem
+                    width: 2.57rem
+                    height: 2.57rem 
+                    background-color: $yellow
+                    border-radius: 50%
+                    outline: none
+                    &::after
+                        content: ''
+                        width: 0.6rem
+                        height: 0.6rem                
+                        border-right: 1px solid $black 
+                        border-top: 1px solid $black
+                        transform: rotate(45deg)
+                        position: absolute
+                        top: 0
+                        bottom: 0
+                        right: 0.2rem
+                        left: 0
+                        margin: auto    
     &-slide
         &__text
             text-align: center

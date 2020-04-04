@@ -62,7 +62,7 @@ function fonts(done){
 
 function php(done) {
     src(['**.php']).pipe(dest('dist/'));
-    src('phpMailer/**/**').pipe(dest('dist1/phpMailer/'));
+    src('phpMailer/**/**').pipe(dest('dist/phpMailer/'));
     done();
 }
 

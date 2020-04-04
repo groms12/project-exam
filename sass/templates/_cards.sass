@@ -1,5 +1,6 @@
 .section
     &__cards
+        margin-bottom: 8rem
         &__info
             margin-top: 2.214rem
             display: flex
@@ -24,7 +25,6 @@
                 left: 11.857rem
                 top: 8.5rem
         &__text
-            margin-right: 3rem
             display: flex
             flex-direction: column
             justify-content: space-between
@@ -53,7 +53,8 @@
                 right: 3rem
                 bottom: -3rem
                 &__mozaica
-                    bottom: -5rem
+                    position: relative
+                    margin-top: -3rem
                 &:hover                    
                     background-color: rgba($yellow, 0.2) 
                     border: 1px solid $yellow
@@ -96,6 +97,7 @@
                 &__adress
                     font-family: 'Roboto-Light'
                     font-weight: 300
+                    margin-left: 2rem
             &__input
                 width: 35.57rem
                 height: 3.214rem
@@ -107,25 +109,31 @@
                 margin-top: 1rem
                 &__mozaica
                     width: 95%
+.agree
+    display: flex
+    justify-content: space-between
+    margin-top: 2rem
 [type="radio"] 
     display: none
 .radio
     margin-bottom: 1.928rem
 .check
     margin-bottom: 1.57rem
+.place_holder 
+  cursor: text   
+  position: absolute
+  top: 2.3rem
+  left: 2.2rem
+  display: none
+  color: lightgrey
+.cont input:invalid + .place_holder 
+   display: inline
 .cont 
-    position: relative
-.placeholder 
-    position: absolute
-    left: 2rem
-    bottom: 0.8rem
-    transform: translateY(-50%)
-    pointer-events: none
-    color: grey
-    &-1
-        bottom: 0.6rem
-.red 
-    color: $yellow
+  position: relative
+  overflow: hidden
+.place_holder span 
+  color: $yellow
+
 .section__cards__text__radio--active
     background-color: $yellow
     cursor: pointer

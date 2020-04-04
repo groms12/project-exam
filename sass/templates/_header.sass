@@ -8,6 +8,10 @@ html
     background-size: cover
     &__list
         position: relative
+        &:hover
+            .header__cap__list__btn::before
+                border-bottom: 2px solid black
+                border-right: 2px solid black
     &__check        
         display: flex
         flex-direction: column
@@ -32,16 +36,42 @@ html
         padding-top: 1rem 
         padding-bottom: 1rem
         position: relative
+        // &__nonactive
+        //     flex-direction: column
+        //     position: absolute
+        //     top: 7.3rem
+        //     left: 0
+        //     background-color: $bg
+        //     padding: 1rem
+        //     opacity: 0
+        //     visibility: hidden
+        //     width: 17.86rem
+        //     &--active
+        //         z-index: 5
+        //         opacity: 1
+        //         visibility: visible
+        &_1
+            font-family: 'Roboto-Regular'
+            list-style-type: none
+            text-transform: uppercase
+            padding-top: 1rem 
+            position: relative
         &__list
             text-decoration: none
             color: $light
             font-size: 1rem
             font-weight: 400
             line-height: 1.285rem
-            margin-right: 2rem
-            margin-left: 2rem
+            &_1
+                text-decoration: none
+                color: $light
+                font-size: 1rem
+                font-weight: 400
+                line-height: 1.285rem
+                margin-left: 5rem
         &__clubs
             &__check
+                text-decoration: none
                 margin-left: 0.3rem
                 color: $black
                 font-size: 1rem
@@ -60,12 +90,16 @@ html
         &__img
             margin-top: 2.3rem 
             margin-bottom: 2.3rem
-            margin-right: 9rem
         &__list
             display: flex
-            justify-content: space-around
+            justify-content: space-between
             align-items: center
+            flex-wrap: wrap
             position: relative
+            &__phones
+                margin-top: 1.3rem
+            &__registration
+                display: inline-block
             &__btn
                 text-transform: uppercase
                 color: $yellow
@@ -75,7 +109,6 @@ html
                 border: 1px solid $yellow
                 border-radius: 30px
                 padding: 1.28rem 2.428rem 1.28rem 4.07rem 
-                margin-right: 4rem
                 &::before
                     content: ''
                     width: 0.714rem
@@ -92,21 +125,26 @@ html
             &__logo
                 margin-right: 0
             &__text
+                text-decoration: none
+                cursor: pointer
                 max-width: 8.785rem
                 color: $light
                 font-size: 1rem
+                display: inline-block
             &__phone
                 position: relative
+                display: inline-block
                 font-family: 'Roboto-Light'
                 color: $light
                 font-size: 0.85rem
-                margin-left: 4rem
                 &__tel
                     text-decoration: none
                     color: $light
                     font-size: 1.357rem
                     font-weight: 700
                     line-height: 1.714rem
+                    outline: none
+                    cursor: pointer
             &__call      
                 cursor: pointer  
                 outline: none
@@ -117,8 +155,9 @@ html
                 background-color: $yellow
                 border: none
                 border-radius: 30px
-                margin-right: 1rem
-                margin-left: 0
+                margin-left: 0.7rem
+                position: relative
+                top: -0.7rem
                 &:hover
                     background-color: rgba($rgba, 0.2) 
                     border: 1px solid $yellow
