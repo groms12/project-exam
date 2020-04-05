@@ -9,7 +9,7 @@
             padding: 1rem
             opacity: 0
             visibility: hidden
-            width: 15.86rem
+            width: 24.86rem
             &--active
                 z-index: 5
                 opacity: 1
@@ -95,6 +95,9 @@
                 margin: auto
                 
 @media screen and ( max-width: 992px )
+    .list
+        &__span
+            display: none
     .footer
         &__menu
             display: none
@@ -134,7 +137,7 @@
         position: absolute
         left: 35px
         top: 11rem
-        width: 30px
+        width: 40px
         height: 2px
         background-color: $light
         border: none
@@ -144,7 +147,7 @@
             position: absolute
             top: 0
             left: 0
-            width: 30px
+            width: 40px
             height: 2px
             background-color: #fff
             transition: transform 0.2s
@@ -155,7 +158,7 @@
             position: absolute
             top: 0
             left: 0
-            width: 30px
+            width: 40px
             height: 2px
             background-color: #fff
             transition: transform 0.2s
@@ -182,6 +185,8 @@
                 margin-top: 4rem
             &__people
                 display: none
+    .people, .people_2_club, .people_3_club, .people_4_club
+        display: none
     .swiper-pagination
         display: none
     .section
@@ -194,9 +199,6 @@
         &__menu
             flex-wrap: wrap
             margin-bottom: 1rem
-@media screen and ( max-width: 910px)
-    .menu-button
-        top: 17rem
 @media screen and ( max-width: 850px ) 
     .header
         &__cap
@@ -211,7 +213,9 @@
         &__href
             flex-direction: column
             align-items: center
-
+@media screen and ( max-width: 749px ) 
+    .menu-button
+        top: 17rem
 @media screen and ( max-width: 569px )
     // .section
     //     &__cards

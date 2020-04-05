@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клуб Щелково</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,22 +12,23 @@
 <body>
     <header class="header headder">
         <div class="header__cap">
-            <div class="container">
+            <div class="conteiner">
             <div class="header__cap__list">
-                <a href="http://marina12.ru/Exam/">
+                <a href="http://marina12.ru/Sport-Clubs/">
                     <img class="header__cap__img" src="img/header-logo/logo.png" alt="ЛЕТО">
                 </a>  
-                <div class="header__list">
-                    <span class="header__cap__list__btn" id="btn">Выбрать клуб</span>
-                    <div class="header__check" id="check">
-                        <a href="http://marina12.ru/Exam/mozaika.html" class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика» <br>
-                            <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span> </a> 
-                            
-                        <a href="http://marina12.ru/Exam/shelkovo.html" class="header__menu__clubs__check">«Лето» в БЦ Спиртзавод <br>
-                            <span class="header__menu__clubs__check__adress"> г. Щелково, ул. Советская, д. 16</span></a>
+                <div class="header__list list">
+                    <div class="list__span"></div>
+                    <div class="mozaika__address" id="btn_1">
+                        <a href="http://marina12.ru/Sport-Clubs/mozaika.html" class="header__menu__clubs__check_1">«Лето» в БЦ Спиртзавод<br>
+                        <span class="header__menu__clubs__check__adress_1">г. Щелково, ул. Советская, д. 16</span> </a> 
                     </div>
-
+                    <div class="shchelkovo__address " id="check_1">
+                        <a href="http://marina12.ru/Sport-Clubs/shelkovo.html" class="header__menu__clubs__check">«Лето» в ТРЦ «Мозаика»<br>
+                        <span class="header__menu__clubs__check__adress"> Москва, 7-я Кожуховская ул., 9</span></a>
+                    </div>
                 </div>
+                
                 <div class="header__cap__list__registration">
                     <img src="img/header-logo/icon.png" alt="логотип" class="header__cap__list__logo">
                     <a class="header__cap__list__text"  data-toggle="modal-free">Записаться на <br> бесплатный визит</a>
@@ -43,58 +45,58 @@
 
         <div class="menu menu_1 ">
             <ul class="container header__menu">
-                <li><a class="header__menu__list" href="#">клубы</a></li>
+                <li><a class="header__menu__list" href="#clubs">клубы</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">услуги</a></li>
+                <li><a class="header__menu__list" href="#service">услуги</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">клубные карты</a></li>
+                <li><a class="header__menu__list" href="#club-card">клубные карты</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">расписание</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">наши тренеры</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
-                <li><a class="header__menu__list" href="#">галерея</a></li>
+                <li><a class="header__menu__list" href="#galery">галерея</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">наши акции</a></li>
                 <li><img class="menu__border" src="img/border.png" alt=""></li>
                 <li><a class="header__menu__list" href="#">контакты</a></li>
             </ul>                        
         </div>
-        <ul class="container header__menu_1 header__menu__nonactive" >
-                <li class="list"><a class="header__menu__list_1" href="#">клубы</a></li>
-                <li class="list"><a class="header__menu__list_1" href="#">услуги</a></li>
-                <li class="list"><a class="header__menu__list_1" href="#">клубные карты</a></li>
+        <ul class="conteiner header__menu_1 header__menu__nonactive" >
+                <li class="list"><a class="header__menu__list_1" href="#clubs">клубы</a></li>
+                <li class="list"><a class="header__menu__list_1" href="#service">услуги</a></li>
+                <li class="list"><a class="header__menu__list_1" href="#club-card">клубные карты</a></li>
                 <li class="list"><a class="header__menu__list_1" href="#">расписание</a></li>
                 <li class="list"><a class="header__menu__list_1" href="#">наши тренеры</a></li>
-                <li class="list"><a class="header__menu__list_1" href="#">галерея</a></li>
+                <li class="list"><a class="header__menu__list_1" href="#galery">галерея</a></li>
                 <li class="list"><a class="header__menu__list_1" href="#">наши акции</a></li>
                 <li class="list"><a class="header__menu__list_1" href="#">контакты</a></li>
         </ul>
 
     <div class="menu-button"></div>
 
-        <div class="swiper-container swiper-container-s1">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide header__main header__main__mozaica">
-                    <div class="header__main__text">
-                        <div class="header__main__text__info">
-                            <img class="header__main__text__info__border" src="img/mozaika/header/border-title.png" alt="">
-                                <div class="header__main__text__info__border__title">
-                                    <span class="header__main__text__info__up">открытый чемпионат</span> 
-                                    <span class="header__main__text__info__middle header__main__text__info__middle--yellow">по&nbsp;бодибилдингу</span> 
-                                    <span class="header__main__text__info__down">приз 200 000 <img src="img/header-logo/rub.png" alt=""></span>    
-                                </div>
-                        </div>
+    <div class="swiper-container swiper-container-s1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide people"><img src="img/people_1.png" alt=""></div>
+            <div class="swiper-slide header__main header__main__mozaica">
+                <div class="header__main__text ">
+                    <div class="header__main__text__info">
+                        <img class="header__main__text__info__border" src="img/mozaika/header/border-title.png" alt="">
+                            <div class="header__main__text__info__border__title">
+                                <span class="header__main__text__info__up">открытый чемпионат</span> 
+                                <span class="header__main__text__info__middle header__main__text__info__middle--yellow">по&nbsp;бодибилдингу</span> 
+                                <span class="header__main__text__info__down">приз 200 000 <img src="img/header-logo/rub.png" alt=""></span>    
+                            </div>
                     </div>
-                    <img class="header__main__people  header__main__people__mozaica" src="img/mozaika/header/man.png" alt="спортсмены">                        
                 </div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
+                <img class="header__main__people header__main__people__mozaica" src="img/mozaika/header/man.png" alt="спортсмены">                        
             </div>
+            <div class="swiper-slide people"><img src="img/people_3.png" alt=""></div>
+            <div class="swiper-slide people"><img src="img/people_4.png" alt=""></div>
+            <div class="swiper-slide people"><img src="img/people_2.png" alt=""></div>
+        </div>
             <!-- If we need pagination -->               
             <div class="swiper-pagination swiper-pagination-header">
                 <span class="swiper__pagination__img"></span>
@@ -107,10 +109,10 @@
 </header>
 
 <main>
-    <section class="section__nav">
+    <section class="section__nav" id="clubs">
         <div class="container">
-            <a class="section__nav__href" href="http://marina12.ru/Exam/">Главная </a>
-            <a class="section__nav__href" href="http://marina12.ru/Exam/">Клубы</a>
+            <a class="section__nav__href" href="http://marina12.ru/Sport-Clubs/">Главная </a>
+            <a class="section__nav__href" href="http://marina12.ru/Sport-Clubs/">Клубы</a>
             <span class="section__nav__text">Лето «Мозаика»</span>
         </div>
     </section>
@@ -194,55 +196,55 @@
         </div>
     </section>
 
-    <section class="section__cards">
+    <section class="section__cards" id="club-card">
         <div class="container">
-                <h2 class="section__title">Клубные карты</h2>
+                <h2 class="section__title">Выбрать карту</h2>
             <div class="section__cards__info">
                 <div class="section__cards__card section__cards__card__mozaica">
-                    <img src="img/card-before.jpg" alt="" class="section__cards__card__before">
-                    <img src="img/card.jpg" alt="" class="section__cards__card__middle">
-                    <img src="img/card-before.jpg" alt="" class="section__cards__card__after">
+                    <!-- <img src="img/card-before.jpg" alt="" class="section__cards__card__before"> -->
+                    <!-- <img src="img/card.jpg" alt="" class="section__cards__card__middle"> -->
+                    <img src="img/card.jpg" alt="" class="section__cards__card__after">
                 </div>
                 <form action="send.php" method="POST" class="section__cards__text  section__cards__text__mozaica">
                     <div class="radio radio__mozaica">
-                        <input type="radio" id="check1" onclick="check1()">
-                        <label for="check1" class="section__cards__text__radio section__cards__text__radio__mozaica label1">
+                        <input type="radio"  id="check_01">
+                        <label for="check_01" class="section__cards__text__radio section__cards__text__radio__mozaica label_01">
                             <span class="section__cards__text__radio__mozaica__label">1 месяц </span> 
                             <span class="section__cards__text__radio__mozaica__label">- соло -</span>                             
                             <span class="section__cards__text__radio__mozaica__label">2 999</span>                              
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
-                        <input type="radio" id="check2" onclick="check()">
-                        <label for="check2" class="section__cards__text__radio section__cards__text__radio__mozaica label2">
+                        <input type="radio"  id="check_02">
+                        <label for="check_02" class="section__cards__text__radio section__cards__text__radio__mozaica label_02">
                            <span class="section__cards__text__radio__mozaica__label">6 месяцев</span> 
                            <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
                            <span class="section__cards__text__radio__mozaica__label"> 9 900</span> 
-                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
-                        <input type="radio" id="check3" onclick="check()">
-                        <label for="check3" class="section__cards__text__radio section__cards__text__radio__mozaica label3">
+                        <input type="radio"  id="check_03">
+                        <label for="check_03" class="section__cards__text__radio section__cards__text__radio__mozaica label_03">
                            <span class="section__cards__text__radio__mozaica__label">9 месяцев</span> 
                            <span class="section__cards__text__radio__mozaica__label">- соло -</span> 
                            <span class="section__cards__text__radio__mozaica__label">11 900 </span> 
-                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* Без заморозки</span> 
+                           <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;Без&nbsp;заморозки</span> 
                         </label>
-                        <input type="radio" id="check4" onclick="check()">
-                        <label for="check4" class="section__cards__text__radio section__cards__text__radio__mozaica label4">
+                        <input type="radio"  id="check_04">
+                        <label for="check_04" class="section__cards__text__radio section__cards__text__radio__mozaica label_04">
                             <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
                             <span class="section__cards__text__radio__mozaica__label">- дневная -</span>
                             <span class="section__cards__text__radio__mozaica__label">9 900 </span>
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                         </label>
-                        <input type="radio" id="check5" onclick="check()">
-                        <label for="check5" class="section__cards__text__radio section__cards__text__radio__mozaica label5">
+                        <input type="radio"  id="check_05">
+                        <label for="check_05" class="section__cards__text__radio section__cards__text__radio__mozaica label_05">
                             <span class="section__cards__text__radio__mozaica__label">12 месяцев</span>
                             <span class="section__cards__text__radio__mozaica__label">- соло -</span>
                             <span class="section__cards__text__radio__mozaica__label">15 900 </span>
-                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">* 1 месяц заморозки</span>
+                            <span class="section__cards__text__radio__mozaica__label section__cards__text__radio__mozaica__label__2">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                         </label>
                     </div> 
                     <!-- <input type="text" class="section__cards__text__input" placeholder="Ваше имя*"> -->
-                    <label class="cont">
+                    <label class="cont cont-1">
                         <input required="true" type="text" name="userName" id="text-1" class="section__cards__text__input section__cards__text__input__mozaica form-control">                              
                         <div class="place_holder">Ваше имя <span class="red">*</span></div>
                     </label>
@@ -252,8 +254,8 @@
                     </label>
                     <div class="agree">
                         <div class="check">
-                            <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox section__free__form__check">
-                            <label for="policy-checkbox" class="policy__label section__free__form__check__text">Я согласен на обработку персональных данных</label> 
+                            <input type="checkbox" name="policyCheckbox" id="policy--checkbox" class="policy__checkbox section__free__form__check">
+                            <label for="policy--checkbox" class="policy__label section__free__form__check__text">Я согласен на обработку персональных данных</label> 
                         </div>
                         <input type="submit" class="section__cards__text__submit section__cards__text__submit__mozaica" value="Забронировать карту">
                 
@@ -263,86 +265,95 @@
             </div>
     </section>
 
-    <section class="section__photoes section__photoes__mozaica">
-        <div class="containe">
-                <h2 class="section__title">Фотогалерея</h2>
-            <div class="swiper-container swiper-container-s3">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo2.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo3.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo4.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo5.jpg" alt=""></div>                         
-                </div>                                
-                <div class="swiper-button-prev-btn__galery"></div>
-                <div class="swiper-pagination swiper-pagination-galery">
-                    <span class="swiper__pagination__img"></span>
-                    <span class="swiper__pagination__img"></span>
-                    <span class="swiper__pagination__img"></span>
-                    <span class="swiper__pagination__img"></span>
-                    <span class="swiper__pagination__img"></span>
-                </div>
-                <div class="swiper-button-next-btn__galery"></div>
-            </div>           
-            </div>
-    </section>
-    
-    <section class="section__service">
-            <div class="section__title">услуги наших клубов</div>
-            <div class="container swiper-container swiper-container-s2">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="img/service/akva.jpg" alt="">
-                        <p class="swiper-slide__text">Аква территория <br>
-                           <span class="swiper-slide__text__info">Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.</span> </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/service/dumb_bells.jpg" alt="">
-                        <p class="swiper-slide__text">Зона свободных весов<br>
-                            <span class="swiper-slide__text__info">Здесь есть всё необходимое, чтобы достичь максимальных результатов</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/service/trx.jpg" alt="">
-                        <p class="swiper-slide__text">Зона TRX<br>
-                            <span class="swiper-slide__text__info"> Укрепление суставов и связок, увеличение мышечной массы, выносливости и гибкости</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/service/run.jpg" alt="">
-                        <p class="swiper-slide__text">Кардиозона<br>
-                            <span class="swiper-slide__text__info"> Эффективное снижение веса и улучшение работы сердечно-сосудистой системы</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/service/iota.jpg" alt="">
-                        <p class="swiper-slide__text">Йога<br>
-                            <span class="swiper-slide__text__info"> Йога - идеальны не только физическая форма, но и эмоциональное состояние</span></p>
-                    </div>                        
-                </div>                                
-            </div>                
-            
-            <div class="swiper-button-prev-btn"></div>
-            <div class="swiper-button-next-btn"></div>
-    </section>
 
-    <section class="section__free">
-        <div class="container">
-            <h2 class="section__title section__title--light section__free__title">Записаться на бесплатный визит</h2>
-            <form action="send.php" class="section__free__form" method="POST">
-                <div class="form free__form">
-                    <input type="text" name="userName" class="section__free__form__input" placeholder="Ваше имя...">
-                    <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
-                    <button class="section__free__form__button">Записаться</button>
-                </div> 
-                <div class="check">
-                    <input type="checkbox" name="policyheckbox" id="policy-checkbox" class="policy__checkbox section__free__form__check">
-                    <label for="policy-checkbox" class="policy__label section__free__form__check__text">Я согласен на обработку персональных данных</label> 
-                </div>
-            </form>
-        </div>
-    </section>
+    <h2  id="galery" class="section__title section__title__photoes">Фотогалерея</h2>
+
+        <section class="section__photoes  section__photoes__mozaica">
+            <div class="container">
+                <div class="swiper-container swiper-container-s3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo2.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo3.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo4.jpg" alt=""></div>
+                        <div class="swiper-slide swiper-slide-galery"><img src="img/main-section/photo5.jpg" alt=""></div>   
+
+                    </div>                             
+                    <div class="swiper-button-prev-btn__galery"></div>
+
+                        <div class="swiper-pagination swiper-pagination-galery">
+                            <span class="swiper__pagination__img"></span>
+                            <span class="swiper__pagination__img"></span>
+                            <span class="swiper__pagination__img"></span>
+                            <span class="swiper__pagination__img"></span>
+                            <span class="swiper__pagination__img"></span>
+                        </div>
+                    <div class="swiper-button-next-btn__galery"></div>
+                </div>           
+            </div>
+                    
+        </section>
+    
+        <section class="section__service section__service__mozaica" id="service">
+            <div class="container">
+                <div class="section__title">услуги наших клубов</div>
+                <div class=" swiper-container swiper-container-s2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/service/akva.jpg" alt="">
+                            <p class="swiper-slide__text">Аква территория <br>
+                               <span class="swiper-slide__text__info">Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.</span> </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/service/dumb_bells.jpg" alt="">
+                            <p class="swiper-slide__text">Зона свободных весов<br>
+                                <span class="swiper-slide__text__info">Здесь есть всё необходимое, чтобы достичь максимальных результатов</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/service/trx.jpg" alt="">
+                            <p class="swiper-slide__text">Зона TRX<br>
+                                <span class="swiper-slide__text__info"> Укрепление суставов и связок, увеличение мышечной массы, выносливости и гибкости</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/service/run.jpg" alt="">
+                            <p class="swiper-slide__text">Кардиозона<br>
+                                <span class="swiper-slide__text__info"> Эффективное снижение веса и улучшение работы сердечно-сосудистой системы</span></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/service/iota.jpg" alt="">
+                            <p class="swiper-slide__text">Йога<br>
+                                <span class="swiper-slide__text__info"> Йога - идеальны не только физическая форма, но и эмоциональное состояние</span></p>
+                        </div>                        
+                    </div>     
+
+                    <div class="swiper-button-prev-btn"></div>
+                    <div class="swiper-button-next-btn"></div>
+                </div>          
+            </div>
+        </section>
+
+        <section class="section__free">
+            <div class="container">
+                <h2 class="section__title section__title--light section__free__title">Записаться на бесплатный визит</h2>
+                <form action="send.php" class="section__free__form" method="POST">
+                    <div class="form free__form">
+                        <div class="input">
+                            <input type="text" name="userName" class="section__free__form__input" placeholder="Ваше имя...">
+                        </div>
+                        <div class="input">
+                            <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
+                        </div>
+                        <button class="section__free__form__button">Записаться</button>
+                    </div> 
+                    <div class="check">
+                        <input type="checkbox" name="policyheckbox" id="policy-checkbox" class="policy__checkbox section__free__form__check">
+                        <label for="policy-checkbox" class="policy__label section__free__form__check__text">Я согласен на обработку персональных данных</label> 
+                    </div>
+                </form>
+            </div>
+        </section>
 </main>
 <div class="ymap-container-2">
     <div class="loader loader-default"></div>
@@ -356,20 +367,20 @@
             <div class="footer__menu__summer">
                 <ul class="footer__menu__list">
                     <li class="footer__menu__list__title footer__menu__list__li">"Лето"</li> 
-                    <li class="footer__menu__list__li">Клубы</li>
-                    <li class="footer__menu__list__li">Новости</li>
-                    <li class="footer__menu__list__li">Акции</li>
-                    <li class="footer__menu__list__li">Фотогалерея</li>
-                    <li class="footer__menu__list__li">Наши контакты</li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#clubs">Клубы</a> </li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#">Новости</a></li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#">Акции</a> </li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#galery">Фотогалерея</a> </li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#">Наши контакты</a> </li>
                 </ul>
             </div>
             <div class="footer__menu__clients">
                 <ul class="footer__menu__list">
                     <li class="footer__menu__list__title footer__menu__list__li">Клиентам</li>
-                    <li class="footer__menu__list__li">Клубные карты</li>
-                    <li class="footer__menu__list__li">расписание</li>
-                    <li class="footer__menu__list__li">Услуги</li>
-                    <li class="footer__menu__list__li">Тренеры</li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#club-card">Клубные карты</a></li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#">расписание</a></li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#service">Услуги</a></li>
+                        <li class="footer__menu__list__li"><a class="footer__menu__list__li__href" href="#">Тренеры</a></li>
                 </ul>
             </div>
             <div class="footer__menu__clubs">
@@ -389,7 +400,8 @@
                 <label class="header__cap__list__phone footer__menu__call__phone" > <span class="span-footer">Единый телефон</span>  <br>
                     <a class="header__cap__list__phone__tel"  href="tel:+74952660278">+7 (495) 266 02 78</a> 
                 </label>
-                <button class="header__cap__list__call footer__menu__call__btn">перезвоните мне</button>
+                <button class="header__cap__list__call footer__menu__call__btn"  data-toggle="modal-call">перезвоните мне</button>
+
             </div>
         </div>
         <div class="footer__img">
@@ -409,8 +421,9 @@
        
 </footer>
     
-<div class="modal modal--call">
-    <div class="modal__dialog">
+<div class="container">
+    <div class="modal modal--call">
+        <div class="modal__dialog">
         <button class="modal__close modal__close__call"></button>
         <h3 class="modal__title">Обратный звонок</h3>
         <form action="send.php" method="POST" class="form modal__form">
@@ -425,13 +438,14 @@
         </form>
         <!-- /.form modal__form -->
     </div>
+    
 </div>
 
 <div class="modal modal--free">
-    <div class="modal__dialog">
+        <div class="modal__dialog">
         <button class="modal__close modal__close__free"></button>
         <h3 class="modal__title">Записаться на визит</h3>
-        <form action="send.php" method="POST" class="form modal__form">
+        <form action="send.php" method="POST" class="form modal__form modal__form_1">
             <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
             <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
             <div class="policy modal__policy">
@@ -442,8 +456,9 @@
             <button class="section__free__form__button modal__button">Записаться</button>
         </form>
         <!-- /.form modal__form -->
-    </div>
+    </div>        
 </div>
+   </div>
 
 <a href="#" class="scroll-top"></a>
 

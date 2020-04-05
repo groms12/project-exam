@@ -43,6 +43,23 @@ html
             text-transform: uppercase
             padding-top: 1rem 
             position: relative
+            padding-right: 2rem
+        &__mozaica
+            font-family: 'Roboto-Regular'
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            align-items: center
+            text-transform: uppercase
+            padding-top: 1rem 
+            padding-bottom: 1rem
+            position: relative
+            &_1
+                font-family: 'Roboto-Regular'
+                list-style-type: none
+                text-transform: uppercase
+                padding-top: 1rem 
+                position: relative
         &__list
             text-decoration: none
             color: $light
@@ -54,10 +71,11 @@ html
             &_1
                 text-decoration: none
                 color: $light
-                font-size: 1rem
+                font-size: 1.5rem
                 font-weight: 400
                 line-height: 1.285rem
-                margin-left: 5rem
+                margin-left: 7rem
+                margin-bottom: 1.5rem
                 &:hover
                     color: lightgrey
         &__clubs
@@ -71,9 +89,25 @@ html
                 font-family: 'Roboto-Medium'
                 font-weight: 500
                 margin-bottom: 1rem
+                &:hover
+                    text-decoration: underline
+                &_1
+                    text-decoration: none
+                    margin-left: 0.3rem
+                    font-size: 1rem
+                    font-weight: 300
+                    line-height: 1.428rem
+                    font-family: 'Roboto-Medium'
+                    font-weight: 500
+                    margin-bottom: 1rem
+                    color: $yellow
                 &__adress
                     font-family: 'Roboto-Light'
                     font-weight: 300
+                    &_1
+                        font-family: 'Roboto-Light'
+                        font-weight: 300
+                        color: $light
     &__cap
         font-family: 'Roboto-Bold'
         background: url('../img/background/cap-background.jpg') no-repeat center 
@@ -141,6 +175,8 @@ html
                     line-height: 1.714rem
                     outline: none
                     cursor: pointer
+                    &:hover
+                        color: lightgrey
             &__call      
                 cursor: pointer  
                 outline: none
@@ -149,7 +185,7 @@ html
                 width: 11.428rem
                 padding: 1.2rem 
                 background-color: $yellow
-                border: none
+                border: 1px solid $yellow
                 border-radius: 30px
                 margin-left: 1rem
                 position: relative
@@ -168,8 +204,10 @@ html
         &__people
             z-index: 3
             margin-right: -25rem
+            margin-top: 1rem
             &__mozaica
                 margin-right: 0
+                margin-top: 1rem
         &__text      
             line-height: 1.285rem
             text-transform: uppercase
@@ -237,6 +275,12 @@ html
     width: 85%
     max-width: 1256px
     margin: auto
+    overflow: hidden
+.container
+    width: 85%
+    max-width: 1256px
+    margin: auto
+    height: 100%
 .header__list:hover .header__check
     display: flex
     position: absolute
@@ -246,8 +290,63 @@ html
     margin-top: -1rem
 .people
     display: flex
+    justify-content: space-around
+    &__text
+        color: $yellow
+        text-transform: uppercase
+        align-items: center
+        margin-top: 10rem
+        font-size: 3.5rem
+        text-align: center
+.mozaika__address
+    margin-top: 1rem
+.list
+    display: flex
+    &__span
+        width: 3rem
+        height: 3rem
+        border: 2px solid $yellow
+        border-radius: 50%
+        position: relative
+        left: -1rem
+        top: 0.5rem
+        &::after
+            content: ''
+            width: 0.714rem
+            height: 0.714rem
+            border-bottom: 2px solid $yellow
+            border-right: 2px solid $yellow
+            transform: rotate(45deg)
+            position: absolute
+            left: 1.05rem
+            top: 1rem
+.header__list:hover .shchelkovo__address 
+  display: flex
+  position: absolute
+  z-index: 3
+.shchelkovo__address 
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  display: none
+  cursor: pointer
+  background-color: $yellow
+  position: absolute
+  top: 4rem
+  left: 3rem
+  z-index: 3
+  padding: 1.785rem 0px 0.36rem 2.14rem
+  border-radius: 0.36rem
+  width: 16.14rem
+.people_2_club
+    display: flex
     justify-content: center
-
-		
-
-
+    top: 4rem
+.people_3_club
+    display: flex
+    justify-content: center
+    top: 4rem
+.people_4_club
+    display: flex
+    justify-content: center
+    top: 2rem
