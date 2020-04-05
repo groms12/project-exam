@@ -1,7 +1,6 @@
 <?php
     $userName=$_POST['userName'];
     $userPhone=$_POST['userPhone'];
-    $userEmail=$_POST['userEmail'];
 
 // Load Composer's autoloader
 require_once 'phpMailer/Exception.php';
@@ -29,8 +28,8 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка сайта';
-    $mail->Body    = "Пользователь оставил данные ".$userName, $userPhone;
+    $mail->Subject = 'Заявка на получение карты';
+    $mail->Body    = "Пользователь оставил данные ".$userName. ", ". $userPhone;
 
     if ($mail->send())  {
         echo "ok";

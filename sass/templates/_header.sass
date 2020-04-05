@@ -8,6 +8,7 @@ html
     background-size: cover
     &__list
         position: relative
+        margin-left: 4rem
         &:hover
             .header__cap__list__btn::before
                 border-bottom: 2px solid black
@@ -30,26 +31,12 @@ html
         font-family: 'Roboto-Regular'
         list-style-type: none
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         align-items: center
         text-transform: uppercase
         padding-top: 1rem 
         padding-bottom: 1rem
         position: relative
-        // &__nonactive
-        //     flex-direction: column
-        //     position: absolute
-        //     top: 7.3rem
-        //     left: 0
-        //     background-color: $bg
-        //     padding: 1rem
-        //     opacity: 0
-        //     visibility: hidden
-        //     width: 17.86rem
-        //     &--active
-        //         z-index: 5
-        //         opacity: 1
-        //         visibility: visible
         &_1
             font-family: 'Roboto-Regular'
             list-style-type: none
@@ -62,6 +49,8 @@ html
             font-size: 1rem
             font-weight: 400
             line-height: 1.285rem
+            &:hover
+                color: lightgrey
             &_1
                 text-decoration: none
                 color: $light
@@ -69,6 +58,8 @@ html
                 font-weight: 400
                 line-height: 1.285rem
                 margin-left: 5rem
+                &:hover
+                    color: lightgrey
         &__clubs
             &__check
                 text-decoration: none
@@ -90,12 +81,15 @@ html
         &__img
             margin-top: 2.3rem 
             margin-bottom: 2.3rem
+            cursor: pointer
+            text-decoration: none
         &__list
             display: flex
-            justify-content: space-between
+            justify-content: space-around
             align-items: center
             flex-wrap: wrap
             position: relative
+            padding-top: 0
             &__phones
                 margin-top: 1.3rem
             &__registration
@@ -131,6 +125,8 @@ html
                 color: $light
                 font-size: 1rem
                 display: inline-block
+                &:hover
+                    color: lightgrey
             &__phone
                 position: relative
                 display: inline-block
@@ -155,7 +151,7 @@ html
                 background-color: $yellow
                 border: none
                 border-radius: 30px
-                margin-left: 0.7rem
+                margin-left: 1rem
                 position: relative
                 top: -0.7rem
                 &:hover
@@ -166,12 +162,19 @@ html
         display: flex
         justify-content: center
         align-items: center
+        margin-top: 1rem
+        &__mozaica
+            // justify-content: space-around
         &__people
             z-index: 3
+            margin-right: -25rem
+            &__mozaica
+                margin-right: 0
         &__text      
             line-height: 1.285rem
             text-transform: uppercase
             font-weight: 300
+            margin-top: -1rem
             &__info
                 display: flex
                 flex-direction: column
@@ -241,6 +244,9 @@ html
 .menu
     background: url('../img/background/menu_background.jpg') no-repeat center
     margin-top: -1rem
+.people
+    display: flex
+    justify-content: center
 
 		
 

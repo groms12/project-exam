@@ -1,5 +1,6 @@
 .section
     &__cards
+        margin-top: -1rem
         margin-bottom: 8rem
         &__info
             margin-top: 2.214rem
@@ -29,6 +30,7 @@
             flex-direction: column
             justify-content: space-between
             position: relative
+            margin-right: 2rem
             &__mozaica
                 margin-left: 3rem
                 margin-right: 0
@@ -73,8 +75,9 @@
                 font-family: 'Roboto-Regular'
                 text-transform: uppercase
                 color: #1e1c34
-                border: 1px solid #1e1c34
+                border: 1px solid lightgrey
                 border-radius: 30px
+                margin-left: -1rem
                 &__mozaica
                     border-radius: 0
                     text-align: center
@@ -94,6 +97,8 @@
                 color: #2e2e2e
                 font-family: 'Roboto-Medium'
                 font-weight: 500
+                &-2
+                    margin-top: -1rem
                 &__adress
                     font-family: 'Roboto-Light'
                     font-weight: 300
@@ -114,23 +119,28 @@
     justify-content: space-between
     margin-top: 2rem
 [type="radio"] 
-    display: none
+    // display: none
+    opacity: 0
+    visibility: hidden
 .radio
     margin-bottom: 1.928rem
 .check
     margin-bottom: 1.57rem
+    position: relative
 .place_holder 
   cursor: text   
   position: absolute
   top: 2.3rem
   left: 2.2rem
-  display: none
   color: lightgrey
+  display: none
 .cont input:invalid + .place_holder 
    display: inline
 .cont 
   position: relative
   overflow: hidden
+  &-1
+      margin-top: -1rem
 .place_holder span 
   color: $yellow
 
@@ -140,4 +150,20 @@
 .radio
     &__mozaica
         display: flex
+span.invalid 
+  color: $yellow  
+  position: absolute
+  top: -1rem
+  left: 0
+p.invalid 
+  color: $yellow
+  position: absolute
+  top: -1rem
+#cardPeriod-error
+    position: relative
+    top: 0.2rem
+#policyheckbox-error
+    top: 0
+div.invalid 
+  color: $yellow
 

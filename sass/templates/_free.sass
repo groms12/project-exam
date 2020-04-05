@@ -2,9 +2,10 @@
     &__free
         background: url('../img/background/background.jpg') no-repeat center
         background-size: cover
-        padding: 1rem 0 3rem 0
+        padding: 0 0 3rem 0
+        margin-top: -1rem
         &__title
-            // padding-top: 4.5rem
+            padding-top: 3.5rem
             &::after
                 display: none
                 padding-top: 3.7rem
@@ -49,15 +50,6 @@
                     line-height: 1.574rem
                     text-transform: uppercase
 
-span.invalid 
-    color: $yellow
-    position: absolute
-#userName-error
-    bottom: 3rem
-    left: 20rem
-#userPhone-error
-    bottom: 3rem
-    left: 40rem
-#policyCheckbox-error
-    bottom: 0.7rem
-    left: 35rem
+.input
+    position: relative
+    display: inline-block

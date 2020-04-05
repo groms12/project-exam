@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    new WOW().init();
+
     var mySwiper = new Swiper ('.swiper-container-s1', {
         loop: true,
         preloadImages: false,
@@ -19,13 +21,13 @@ $(document).ready(function () {
         spaceBetween: 12,
         breakpoints: {
             320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            500: {
               slidesPerView: 2,
               spaceBetween: 20
             },
-            // 500: {
-            //   slidesPerView: 2,
-            //   spaceBetween: 20
-            // },
             740: {
               slidesPerView: 3,
               spaceBetween: 20
@@ -33,6 +35,10 @@ $(document).ready(function () {
             992: {
               slidesPerView: 4,
               spaceBetween: 20
+            },
+            1300: {
+                slidesPerView: 5,
+                spaceBetween: 20
             }
           },
           navigation: {
@@ -146,6 +152,104 @@ $(document).ready(function () {
               required: true,
               minlength: 18,
           },
+          policyheckbox: {
+            required: true,
+          }
+        }, 
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не длиннее 15 букв"
+            },
+            userPhone: {
+                required: "Телефон обязателен",
+                minlength: "Минимум 10 цифр",
+            },
+            policyheckbox: {
+                required: "Обязательно согласие",
+            }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    alert("Форма отправлена, мы свяжемся с вами в ближайшее время");
+                }
+            });
+          }
+      });
+      $('.section__cards__text').validate({
+        errorClass: "invalid",
+        errorElement: "p",
+        rules: {
+          userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+          },
+          userPhone: {
+              required: true,
+              minlength: 18,
+          },
+          policyCheckbox: {
+            required: true
+          },
+        //   cardPeriod: {
+        //     required: true
+        //   },
+          fitnessClub: {
+            required: true
+          }
+        }, 
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не длиннее 15 букв"
+            },
+            userPhone: {
+                required: "Телефон обязателен",
+                minlength: "Минимум 10 цифр",
+            },
+            policyCheckbox: {
+                required: "Обязательно согласие",
+            },
+            // cardPeriod: {
+            //     required: "Выберете срок действия карты"
+            // },
+            fitnessClub: {
+                required: "Выберете фитнес-клуб"
+            }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    alert("Форма отправлена, мы свяжемся с вами в ближайшее время");
+                }
+            });
+          }
+      });
+      $('.modal__form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+          userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+          },
+          userPhone: {
+              required: true,
+              minlength: 18,
+          },
           policyCheckbox: {
             required: true,
           }
@@ -176,6 +280,49 @@ $(document).ready(function () {
             });
           }
       });
+      $('.modal__form_1').validate({
+        errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: {
+                required: true,
+                minlength: 18,
+            },
+            policyCheckbox: {
+                required: true,
+            }
+            },
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не длиннее 15 букв"
+            },
+            userPhone: {
+                required: "Телефон обязателен",
+                minlength: "Минимум 10 цифр",
+            },
+            policyCheckbox: {
+                required: "Обязательно согласие",
+            }
+            },
+            submitHandler: function(form) {
+                $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    alert("Форма отправлена, мы свяжемся с вами в ближайшее время");
+                    }
+                });
+            }
+        });
       
       var spinner_1 = $('.ymap-container-1').children('.loader');
       var check_if_load_1 = 0;
