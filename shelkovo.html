@@ -139,9 +139,9 @@
                     <p class="section__clubs__text section__clubs__text--left"> Часы работы: <br>
                         <span class="section__clubs__text__adress">ПН-ВС: круглосуточно</span> </p>
                     <p class="section__clubs__text section__clubs__text--left"> Единый телефон: <br>
-                        <span class="section__clubs__text__adress">+ 7 (495) 266-02-48</span> </p>
+                        <a href="tel:+74952660248" class="section__clubs__text__adress">+ 7 (495) 266-02-48</a> </p>
                     <p class="section__clubs__text section__clubs__text--left"> E-mail: <br>
-                        <span class="section__clubs__text__adress">sell@letofit.ru</span> </p>
+                        <a href="mailto:sell@letofit.ru" class="section__clubs__text__adress">sell@letofit.ru</a> </p>
                 </div>                   
                 </div>
                      
@@ -427,8 +427,12 @@
         <button class="modal__close modal__close__call"></button>
         <h3 class="modal__title">Обратный звонок</h3>
         <form action="send.php" method="POST" class="form modal__form">
-            <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
-            <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
+            <div class="modal-check">
+               <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
+            </div>
+            <div class="modal-check">
+               <input type="tel" name="userPhone" class="section__free__form__input modal__input-2" placeholder="Ваш номер телефона...">
+            </div>    
             <div class="policy modal__policy">
                 <input type="checkbox" class="policy__checkbox section__free__form__check modal__check" id="policy_checkbox" name="policyCheckbox" >
                 <label for="policy_checkbox" class="policy__label section__free__form__check__text modal__checkbox">Я согласен на обработку <br>
@@ -446,8 +450,12 @@
         <button class="modal__close modal__close__free"></button>
         <h3 class="modal__title">Записаться на визит</h3>
         <form action="send.php" method="POST" class="form modal__form modal__form_1">
-            <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
-            <input type="tel" name="userPhone" class="section__free__form__input" placeholder="Ваш номер телефона...">
+            <div class="modal-check">
+                <input type="text" name="userName" class="section__free__form__input modal__input" placeholder="Ваше имя...">
+            </div>
+            <div class="modal-check">
+                <input type="tel" name="userPhone" class="section__free__form__input modal__input-2" placeholder="Ваш номер телефона...">
+            </div>
             <div class="policy modal__policy">
                 <input type="checkbox" class="policy__checkbox section__free__form__check modal__check" id="policyCheckbox" name="policyCheckbox" >
                 <label for="policyCheckbox" class="policy__label section__free__form__check__text modal__checkbox">Я согласен на обработку <br>

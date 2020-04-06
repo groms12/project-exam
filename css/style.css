@@ -550,15 +550,15 @@ template {
 
 @-webkit-keyframes rotation {
   from {
-    transform:rotate(0)  }
+    transform:rotate(0) { } }
   to {
-    transform:rotate(359deg)  } }
+    transform:rotate(359deg) { } } }
 
 @keyframes rotation {
   from {
-    transform:rotate(0)  }
+    transform:rotate(0) { } }
   to {
-    transform:rotate(359deg)  } }
+    transform:rotate(359deg) { } } }
 
 @-webkit-keyframes blink {
   from {
@@ -1021,7 +1021,11 @@ html {
       margin-bottom: 2rem; }
     .section__clubs__text__adress {
       font-family: 'Roboto-Light';
-      font-weight: 300; }
+      font-weight: 300;
+      text-decoration: none;
+      color: black; }
+      .section__clubs__text__adress:hover {
+        text-decoration: underline; }
   .section__clubs__mozaica {
     margin-right: 1rem;
     margin-left: 1rem;
